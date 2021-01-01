@@ -3,11 +3,13 @@ import './App.css';
 
 //Components
 import ClassCounterOne from './components/ClassCounterOne';
+import HookCounterOne from './components/HookCounterOne';
 
 function App() {
   return (
     <div className="App">
-      <ClassCounterOne />
+      {/* <ClassCounterOne /> */}
+      <HookCounterOne />
     </div>
   );
 }
