@@ -6,6 +6,7 @@ function HookCounterOne() {
 
   //componentDidMount + componentDidUpdate = useEffect
 
+  //Component didUpdate equivalent
   useEffect(() => {
     console.log('Updating document title');
 
