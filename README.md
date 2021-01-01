@@ -2,6 +2,11 @@
 
 React series by Codevolution
 
+### Lifecycle methods
+
+![creation](/img/creation-cycle.png)
+![updation](/img/updation-cycle.png)
+
 ### Rules of Hooks
 
 1. Don't call hooks inside loops,conditions, or nested function.
