@@ -29,4 +29,8 @@ React series by Codevolution
 
 1. Provides a way to pass data through the component tree without having to pass props down manually at every level.
 
-2.
+###useReducer
+
+1. A hook that is used for state management.
+2. Alternative to useState.
+3. useState is built using useReducer.
