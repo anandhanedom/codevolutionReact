@@ -48,3 +48,7 @@ React series by Codevolution
 2. useEffect - side effects
 3. useContext - context API
 4. useReducer - reducers
+
+### useState vs useReducer
+
+![when](/img/when.png)
