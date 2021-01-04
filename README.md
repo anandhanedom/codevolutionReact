@@ -29,8 +29,22 @@ React series by Codevolution
 
 1. Provides a way to pass data through the component tree without having to pass props down manually at every level.
 
-###useReducer
+### useReducer
 
 1. A hook that is used for state management.
 2. Alternative to useState.
 3. useState is built using useReducer.
+4. useReducer(reducer,initialState), reducer(currentState,action)
+
+### useReducer with Context
+
+1. useReducer - local state management.
+2. Share state between components - Global state management.
+3. useReducer + useContext
+
+### HOOKS
+
+1. useState - state
+2. useEffect - side effects
+3. useContext - context API
+4. useReducer - reducers
