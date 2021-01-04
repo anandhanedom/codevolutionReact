@@ -42,6 +42,12 @@ React series by Codevolution
 2. Share state between components - Global state management.
 3. useReducer + useContext
 
+### useCallback
+
+1. A hook that will return a memoized version of the callback function that only changes if one of the dependencies has changed.
+
+2. It is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders.
+
 ### HOOKS
 
 1. useState - state
