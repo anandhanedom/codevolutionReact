@@ -7,7 +7,7 @@ function ParentComponent() {
   const [age, setAge] = useState(25);
   const [salary, setSalary] = useState(50000);
 
-  //Same functions are different after renders. Hence both the button components get re-rendered.
+  //Same function is different after render. Hence both the button component get re-rendered.
 
   const incrementAge = useCallback(() => {
     setAge(age + 1);
