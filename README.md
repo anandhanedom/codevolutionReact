@@ -12,6 +12,16 @@ React series by Codevolution
 1. Don't call hooks inside loops,conditions, or nested function.
 2. Only call them from within React functional components.
 
+### HOOKS
+
+1. useState - state
+2. useEffect - side effects
+3. useContext - context API
+4. useReducer - reducers
+5. useCallback - cache functions
+6. useMemo - cache returns
+7. useRef - returns a mutable ref object (.current property)
+
 ### useState
 
 1. Lets you add state to functional components.
@@ -24,6 +34,10 @@ React series by Codevolution
 
 1. Lets you perform side effects in functional components.
 2. Close replacement for componentDidMount,componentDidUpdate,and componentWillUnmount.
+
+### useState vs useReducer
+
+![when](/img/when.png)
 
 ### Context
 
@@ -50,13 +64,8 @@ React series by Codevolution
 
 ### useMemo (result caching)
 
-### HOOKS
+### Custom Hooks
 
-1. useState - state
-2. useEffect - side effects
-3. useContext - context API
-4. useReducer - reducers
-
-### useState vs useReducer
-
-![when](/img/when.png)
+1. A custom hook is basically a JS function whose name starts with 'use'.
+2. A custom hook can also call other Hooks if required.
+3. Share logic - alternative to HOCs and render props.
