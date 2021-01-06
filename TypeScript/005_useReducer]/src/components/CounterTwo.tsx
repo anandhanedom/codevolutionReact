@@ -20,6 +20,8 @@ const ActionTypes = {
   RESET: 'RESET',
 };
 
+//HOW TO REPLACE ANY HERE ?
+
 const reducer = (state: typeof INITIAL_STATE, action: IAction | any) => {
   switch (action.type) {
     case ActionTypes.INCREMENT:
