@@ -27,6 +27,7 @@ class ClassCounterOne extends Component<any, ICounter> {
   render() {
     return (
       <div>
+        <h2>Class Counter One</h2>
         <input
           type="text"
           value={this.state.name}
