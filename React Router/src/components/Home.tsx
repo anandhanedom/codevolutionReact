@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, RouteComponentProps } from 'react-router-dom';
+import SpecialButton from './SpecialButton';
 
 interface Props extends RouteComponentProps {}
 
@@ -21,6 +22,7 @@ const Home: React.FC<Props> = ({ history, location, match }) => {
       >
         Click to go to about
       </button>
+      <SpecialButton />
     </div>
   );
 };
