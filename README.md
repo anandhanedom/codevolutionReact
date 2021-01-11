@@ -7,6 +7,17 @@ React series by Codevolution
 ![creation](/img/creation-cycle.png)
 ![updation](/img/updation-cycle.png)
 
+### PureComponent class
+
+1. Implements shouldComponentUpdate lifecycle method by performing a shallow comparison on the props and state of the component.
+2. If there is no difference, the component is not re-rendered - performance boost.
+3. It is a good idea to ensure that all the children components are also pure to avoid unexpected behaviour.
+
+### Error Handling Phase Methods
+
+1. static getDerivedStateFromError(error)
+2. compnentDidCatch(error,info)
+
 ### Rules of Hooks
 
 1. Don't call hooks inside loops,conditions, or nested function.
