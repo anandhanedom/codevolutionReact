@@ -8,12 +8,13 @@ interface IProps {
   id: number;
   title: string;
   info: string;
+  rev: boolean;
 }
 
-const Poster: React.FC<IProps> = ({ title, info, id }) => {
+const Poster: React.FC<IProps> = ({ title, info, id, rev }) => {
   return (
     <article className="flex justify-center">
-      <PosterBody title={title} />
+      <PosterBody title={title} rev={rev} />
       <PosterInfo id={id} info={info} />
     </article>
   );
