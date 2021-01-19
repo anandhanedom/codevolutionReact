@@ -1,0 +1,5 @@
+.poster__body {
+  height: 75vh;
+  width: 60vh;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}

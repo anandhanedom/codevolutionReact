@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SideNav = () => {
+const SideNav: React.FC = () => {
   return <div>Navbar</div>;
 };
 

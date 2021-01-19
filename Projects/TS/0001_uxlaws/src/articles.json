@@ -33,5 +33,20 @@
     "id": 7,
     "title": "Law of Prägnanz",
     "info": "People will perceive and interpret ambiguous or complex images as the simplest form possible, because it is the interpretation that requires the least cognitive effort of us."
+  },
+  {
+    "id": 8,
+    "title": "Law of Proximity",
+    "info": "Objects that are near, or proximate to each other, tend to be grouped together."
+  },
+  {
+    "id": 9,
+    "title": "Law of Similarity",
+    "info": "The human eye tends to perceive similar elements in a design as a complete picture, shape, or group, even if those elements are separated."
+  },
+  {
+    "id": 10,
+    "title": "Law of Uniform Connectedness",
+    "info": "Elements that are visually connected are perceived as more related than elements with no connection."
   }
 ]

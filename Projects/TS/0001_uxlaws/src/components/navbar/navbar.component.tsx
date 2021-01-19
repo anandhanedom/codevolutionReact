@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.styles.css';
 
-const Navbar = (): JSX.Element => {
+const Navbar: React.FC = () => {
   const hello = () => {
     console.log('hello');
   };
