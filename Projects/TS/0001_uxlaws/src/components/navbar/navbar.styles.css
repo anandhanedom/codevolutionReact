@@ -1,0 +1,4 @@
+.menuBtn:focus {
+  outline: none !important;
+  outline-offset: none !important;
+}

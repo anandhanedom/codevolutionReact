@@ -6,7 +6,7 @@ import HomePage from './pages/home/home.pages';
 
 function App(): JSX.Element {
   return (
-    <div className="App">
+    <div className="App font-body">
       <HomePage />
     </div>
   );

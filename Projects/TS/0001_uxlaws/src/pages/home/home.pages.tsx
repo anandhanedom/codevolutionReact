@@ -1,7 +1,15 @@
 import React from 'react';
 
-const Home = () => {
-  return <div>Home Page</div>;
+// Components
+import NavBar from '../../components/navbar/navbar.component';
+
+const Home = (): JSX.Element => {
+  return (
+    <div>
+      <NavBar />
+      <div className="container mx-auto px-4">Hello world</div>
+    </div>
+  );
 };
 
 export default Home;
