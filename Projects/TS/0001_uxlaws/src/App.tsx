@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 
+import { ReactComponent as Logo } from './img/notfound.svg';
+
 // Pages
 import HomePage from './pages/home/home.pages';
 
@@ -15,8 +17,9 @@ const App: React.FC = () => {
         <Route
           path="/"
           render={() => (
-            <div className="flex justify-center items-center h-screen w-screen text-center bg-black text-white	">
+            <div className="flex justify-center items-center h-screen w-screen text-center bg-black text-white">
               <h1 className="text-7xl">Error 404!</h1>
+              <Logo />
             </div>
           )}
         />

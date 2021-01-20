@@ -10,7 +10,7 @@ const Poster: React.FC<IProps> = ({ info, id }) => {
     <div
       // eslint-disable-next-line react/jsx-curly-brace-presence
       className={`text-white max-w-xs ${
-        id % 2 === 0 ? 'pr-14' : 'pl-14'
+        id % 2 === 0 ? 'pr-20' : 'pl-20 '
       } flex-col justify-center hidden md:flex`}
     >
       <p className="text-7xl">{id}</p>
