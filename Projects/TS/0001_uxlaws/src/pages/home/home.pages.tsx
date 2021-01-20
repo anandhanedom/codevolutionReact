@@ -21,7 +21,8 @@ const Home: React.FC = () => {
       title={article.title}
       info={article.info}
       // eslint-disable-next-line react/jsx-boolean-value
-      rev={true}
+      // eslint-disable-next-line no-unneeded-ternary
+      rev={false}
     />
   ));
 
