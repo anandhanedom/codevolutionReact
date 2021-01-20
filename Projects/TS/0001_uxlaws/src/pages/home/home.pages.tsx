@@ -27,7 +27,7 @@ const Home: React.FC = () => {
   ));
 
   return (
-    <div className="bg-black">
+    <div className="bg-black font-body">
       <NavBar />
       <div className="container mx-auto px-4">{articles}</div>
     </div>
