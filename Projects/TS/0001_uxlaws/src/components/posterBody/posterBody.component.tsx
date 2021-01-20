@@ -1,19 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './posterBody.styles.css';
 
 interface IProps {
   title: string;
-  rev: boolean;
+  id: number;
 }
 
-const PosterBody: React.FC<IProps> = ({ title, rev }) => {
+const PosterBody: React.FC<IProps> = ({ title, id }) => {
   return (
-    <div
+    <Link
       className={`poster__body text-3xl font-bold ${
-        rev ? 'order-last' : ''
+        id % 2 === 0 ? 'order-last' : ''
       } flex flex-col`}
       style={{ backgroundColor: '#fff' }}
+      // eslint-disable-next-line react/jsx-curly-brace-presence
+      to={`/articles/${id}`}
     >
       <div className="flex-1 p-4">{title}</div>
       <div
@@ -38,7 +41,7 @@ const PosterBody: React.FC<IProps> = ({ title, rev }) => {
           </g>
         </svg>
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -7,7 +7,12 @@ interface IProps {
 
 const Poster: React.FC<IProps> = ({ info, id }) => {
   return (
-    <div className="text-white max-w-xs pl-14 flex-col justify-center hidden md:flex">
+    <div
+      // eslint-disable-next-line react/jsx-curly-brace-presence
+      className={`text-white max-w-xs ${
+        id % 2 === 0 ? 'pr-14' : 'pl-14'
+      } flex-col justify-center hidden md:flex`}
+    >
       <p className="text-7xl">{id}</p>
       <hr className="w-1/6 mt-8" />
       <p className="text-base tracking-widest my-4">{info}</p>

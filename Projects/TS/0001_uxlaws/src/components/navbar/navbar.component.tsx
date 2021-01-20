@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="flex justify-between p-4 uppercase bg-black text-white font-medium items-center tracking-widest">
+    <nav className="flex justify-between p-4 uppercase bg-black text-white font-medium items-center tracking-widest fixed top-0 w-full">
       <div>Laws of UX</div>
       <button
         type="button"
