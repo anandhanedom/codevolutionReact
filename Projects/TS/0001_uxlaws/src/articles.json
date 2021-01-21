@@ -48,5 +48,55 @@
     "id": 10,
     "title": "Law of Uniform Connectedness",
     "info": "Elements that are visually connected are perceived as more related than elements with no connection."
+  },
+  {
+    "id": 11,
+    "title": "Miller's Law",
+    "info": "The average person can only keep 7 (plus or minus 2) items in their working memory."
+  },
+  {
+    "id": 12,
+    "title": "Occam's Razor",
+    "info": "Among competing hypotheses that predict equally well, the one with the fewest assumptions should be selected."
+  },
+  {
+    "id": 13,
+    "title": "Pareto Principle",
+    "info": "The Pareto principle states that, for many events, roughly 80% of the effects come from 20% of the causes."
+  },
+  {
+    "id": 14,
+    "title": "Parkinson's Law",
+    "info": "Any task will inflate until all of the available time is spent."
+  },
+  {
+    "id": 15,
+    "title": "Peak-End Rule",
+    "info": "People judge an experience largely based on how they felt at its peak and at its end, rather than the total sum or average of every moment of the experience."
+  },
+  {
+    "id": 16,
+    "title": "Postel's Law",
+    "info": "Be liberal in what you accept, and conservative in what you send."
+  },
+  {
+    "id": 17,
+    "title": "Serial Position Effect",
+    "info": "Users have a propensity to best remember the first and last items in a series."
+  },
+  {
+    "id": 18,
+    "title": "Tesler's Law",
+    "info": "Tesler's Law, also known as The Law of Conservation of Complexity, states that for any system there is a certain amount of complexity which cannot be reduced."
+  },
+  {
+    "id": 19,
+    "title": "Von Restorff Effect",
+    "info": "The Von Restorff effect, also known as The Isolation Effect, predicts that when multiple similar objects are present, the one that differs from the rest is most likely to be remembered."
+  },
+  {
+    "id": 20,
+    "title": "Zeigarnik Effect",
+    "info": "People remember uncompleted or interrupted tasks better than completed tasks."
   }
 ]

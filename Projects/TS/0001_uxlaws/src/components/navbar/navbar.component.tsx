@@ -1,18 +1,18 @@
 import React from 'react';
 import './navbar.styles.css';
 
-const Navbar: React.FC = () => {
-  const hello = () => {
-    console.log('hello');
-  };
+interface IProps {
+  toggleNav: () => void;
+}
 
+const Navbar: React.FC<IProps> = ({ toggleNav }) => {
   return (
     <nav className="flex justify-between p-4 uppercase bg-black text-white font-medium items-center tracking-widest fixed top-0 w-full">
       <div>Laws of UX</div>
       <button
         type="button"
         className="menuBtn flex border border-white px-3 py-2 uppercase font-medium"
-        onClick={hello}
+        onClick={toggleNav}
       >
         <span className="mr-2">Menu</span>
         <svg
