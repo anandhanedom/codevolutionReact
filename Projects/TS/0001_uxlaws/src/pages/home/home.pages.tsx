@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Components
 import NavBar from '../../components/navbar/navbar.component';
 import Poster from '../../components/poster/poster.component';
+import SideNav from '../../components/sideNav/sidenav.component';
 
 // Articles JSON
 import articlesJSON from '../../articles.json';
@@ -14,6 +15,8 @@ interface IArticle {
 }
 
 const Home: React.FC = () => {
+  const [showNav] = useState(true);
+
   const articles = articlesJSON.map((article: IArticle) => (
     <Poster
       key={article.id}
@@ -25,8 +28,14 @@ const Home: React.FC = () => {
 
   return (
     <div className="bg-black font-body">
-      <NavBar />
-      <div className="container mx-auto px-4">{articles}</div>
+      {showNav ? (
+        <SideNav />
+      ) : (
+        <div>
+          <NavBar />
+          <div className="container mx-auto px-4">{articles}</div>
+        </div>
+      )}
     </div>
   );
 };
