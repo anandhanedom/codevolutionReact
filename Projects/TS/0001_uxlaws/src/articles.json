@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Aesthetic Usability Effect",
+    "info": "Users often perceive aesthetically pleasing design as design that’s more usable."
+  },
+  {
+    "id": 2,
+    "title": "Doherty Threshold",
+    "info": "Productivity soars when a computer and its users interact at a pace (<400ms) that ensures that neither has to wait on the other."
+  },
+  {
+    "id": 3,
+    "title": "Fitt's Law",
+    "info": "The time to acquire a target is a function of the distance to and size of the target."
+  },
+  {
+    "id": 4,
+    "title": "Hick's Law",
+    "info": "The time it takes to make a decision increases with the number and complexity of choices."
+  },
+  {
+    "id": 5,
+    "title": "Jakob's Law",
+    "info": "Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know."
+  },
+  {
+    "id": 6,
+    "title": "Law of Common Region",
+    "info": "Elements tend to be perceived into groups if they are sharing an area with a clearly defined boundary."
+  },
+  {
+    "id": 7,
+    "title": "Law of Prägnanz",
+    "info": "People will perceive and interpret ambiguous or complex images as the simplest form possible, because it is the interpretation that requires the least cognitive effort of us."
+  },
+  {
+    "id": 8,
+    "title": "Law of Proximity",
+    "info": "Objects that are near, or proximate to each other, tend to be grouped together."
+  },
+  {
+    "id": 9,
+    "title": "Law of Similarity",
+    "info": "The human eye tends to perceive similar elements in a design as a complete picture, shape, or group, even if those elements are separated."
+  },
+  {
+    "id": 10,
+    "title": "Law of Uniform Connectedness",
+    "info": "Elements that are visually connected are perceived as more related than elements with no connection."
+  }
+]
