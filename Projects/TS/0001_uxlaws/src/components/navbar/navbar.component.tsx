@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar.styles.css';
+import { Link } from 'react-router-dom';
 
 interface IProps {
   toggleNav: () => void;
@@ -8,7 +9,9 @@ interface IProps {
 const Navbar: React.FC<IProps> = ({ toggleNav }) => {
   return (
     <nav className="flex justify-between p-4 uppercase bg-black text-white font-medium items-center tracking-widest fixed top-0 w-full">
-      <div>Laws of UX</div>
+      <div>
+        <Link to="/">Laws of UX</Link>
+      </div>
       <button
         type="button"
         className="menuBtn flex border border-white px-3 py-2 uppercase font-medium"
