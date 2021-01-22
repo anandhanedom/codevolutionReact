@@ -9,9 +9,10 @@ import PosterGraphics from '../posterGraphics/posterGraphics.component';
 interface IProps {
   title: string;
   id: number;
+  color: string;
 }
 
-const PosterBody: React.FC<IProps> = ({ title, id }) => {
+const PosterBody: React.FC<IProps> = ({ title, id, color }) => {
   return (
     <Link
       className={`poster__body text-4xl font-bold ${
@@ -38,7 +39,7 @@ const PosterBody: React.FC<IProps> = ({ title, id }) => {
         {title}
       </div>
 
-      <PosterGraphics id={id} />
+      <PosterGraphics id={id} color={color} />
     </Link>
   );
 };

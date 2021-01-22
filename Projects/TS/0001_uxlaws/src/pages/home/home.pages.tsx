@@ -12,6 +12,7 @@ interface IArticle {
   id: number;
   title: string;
   info: string;
+  color: string;
 }
 
 const Home: React.FC = () => {
@@ -34,6 +35,7 @@ const Home: React.FC = () => {
       id={article.id}
       title={article.title}
       info={article.info}
+      color={article.color}
     />
   ));
 

@@ -8,12 +8,13 @@ interface IProps {
   id: number;
   title: string;
   info: string;
+  color: string;
 }
 
-const Poster: React.FC<IProps> = ({ title, info, id }) => {
+const Poster: React.FC<IProps> = ({ title, info, id, color }) => {
   return (
     <article className="flex justify-center poster py-32">
-      <PosterBody id={id} title={title} />
+      <PosterBody id={id} title={title} color={color} />
       <PosterInfo id={id} info={info} />
     </article>
   );
