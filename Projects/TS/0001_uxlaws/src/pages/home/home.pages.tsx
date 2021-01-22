@@ -15,7 +15,11 @@ interface IArticle {
 }
 
 const Home: React.FC = () => {
-  const [showNav] = useState(true);
+  const [showNav, setShowNav] = useState(false);
+
+  const toggleNav = () => {
+    setShowNav(!showNav);
+  };
 
   const articles = articlesJSON.map((article: IArticle) => (
     <Poster
@@ -29,10 +33,10 @@ const Home: React.FC = () => {
   return (
     <div className="bg-black font-body">
       {showNav ? (
-        <SideNav />
+        <SideNav toggleNav={toggleNav} />
       ) : (
         <div>
-          <NavBar />
+          <NavBar toggleNav={toggleNav} />
           <div className="container mx-auto px-4">{articles}</div>
         </div>
       )}

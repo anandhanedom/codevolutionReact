@@ -485,6 +485,858 @@ const PosterGraphics: React.FC<IProps> = ({ id }) => {
       );
       break;
 
+    case 11:
+      graphics = (
+        <div
+          className="px-14 py-8 h-3/4 flex flex-col justify-center items-center"
+          style={{ backgroundColor: '#f35e4e' }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 565 564">
+            <g fill="none" fillRule="evenodd">
+              <circle cx="34" cy="34" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="118" cy="34" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="199" cy="34" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="283" cy="34" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="365" cy="34" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="449" cy="34" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="531" cy="34" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="34" cy="117" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="118" cy="117" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="199" cy="117" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="283" cy="117" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="365" cy="117" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="449" cy="117" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="531" cy="117" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="34" cy="199" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="118" cy="199" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="199" cy="199" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="283" cy="199" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="365" cy="199" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="449" cy="199" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="531" cy="199" r="34" fill="#000" fillOpacity=".2" />
+              <circle
+                cx="34"
+                cy="282"
+                r="34"
+                fill="#F4F1D0"
+                fillOpacity=".25"
+              />
+              <circle
+                cx="118"
+                cy="282"
+                r="34"
+                fill="#F4F1D0"
+                fillOpacity=".5"
+              />
+              <circle cx="199" cy="282" r="34" fill="#F4F1D0" />
+              <circle cx="283" cy="282" r="34" fill="#F4F1D0" />
+              <circle cx="365" cy="282" r="34" fill="#F4F1D0" />
+              <circle
+                cx="449"
+                cy="282"
+                r="34"
+                fill="#F4F1D0"
+                fillOpacity=".5"
+              />
+              <circle
+                cx="531"
+                cy="282"
+                r="34"
+                fill="#F4F1D0"
+                fillOpacity=".25"
+              />
+              <circle cx="34" cy="365" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="118" cy="365" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="199" cy="365" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="283" cy="365" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="365" cy="365" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="449" cy="365" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="531" cy="365" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="34" cy="448" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="118" cy="448" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="199" cy="448" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="283" cy="448" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="365" cy="448" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="449" cy="448" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="531" cy="448" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="34" cy="530" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="118" cy="530" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="199" cy="530" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="283" cy="530" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="365" cy="530" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="449" cy="530" r="34" fill="#000" fillOpacity=".2" />
+              <circle cx="531" cy="530" r="34" fill="#000" fillOpacity=".2" />
+            </g>
+          </svg>
+        </div>
+      );
+      break;
+
+    case 12:
+      graphics = (
+        <div
+          className="px-14 py-8 h-3/4 flex flex-col justify-center items-center"
+          style={{ backgroundColor: '#b54a48' }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 565 564">
+            <g fill="none" fillRule="evenodd">
+              <path fillOpacity=".1" fill="#000" d="M1 0h270v270H1z" />
+              <circle fillOpacity=".15" fill="#000" cx="100" cy="100" r="100" />
+              <circle fillOpacity=".15" fill="#000" cx="171" cy="100" r="100" />
+              <circle fillOpacity=".15" fill="#000" cx="101" cy="170" r="100" />
+              <circle fillOpacity=".15" fill="#000" cx="171" cy="170" r="100" />
+              <path fillOpacity=".1" fill="#000" d="M295 0h270v270H295z" />
+              <circle fillOpacity=".15" fill="#000" cx="430" cy="100" r="100" />
+              <circle fillOpacity=".15" fill="#000" cx="395" cy="170" r="100" />
+              <circle fillOpacity=".15" fill="#000" cx="465" cy="170" r="100" />
+              <path fillOpacity=".1" fill="#000" d="M1 294h270v270H1z" />
+              <circle fillOpacity=".15" fill="#000" cx="101" cy="394" r="100" />
+              <circle fillOpacity=".15" fill="#000" cx="171" cy="464" r="100" />
+              <path fillOpacity=".1" fill="#000" d="M295 294h270v270H295z" />
+              <circle fill="#F4F1D0" cx="430" cy="429" r="100" />
+            </g>
+          </svg>
+        </div>
+      );
+      break;
+
+    case 13:
+      graphics = (
+        <div
+          className="px-14 py-8 h-3/4 flex flex-col justify-center items-center"
+          style={{ backgroundColor: '#37abbf' }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566 565">
+            <g fill="none" fillRule="evenodd">
+              <circle cx="48.5" cy="48.5" r="48.5" fill="#F4F1D0" />
+              <circle
+                cx="166.5"
+                cy="48.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="283.5"
+                cy="48.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="400.5"
+                cy="48.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="517.5"
+                cy="48.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="48.5"
+                cy="165.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle cx="166.5" cy="165.5" r="48.5" fill="#F4F1D0" />
+              <circle
+                cx="283.5"
+                cy="165.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="400.5"
+                cy="165.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="517.5"
+                cy="165.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="48.5"
+                cy="282.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="166.5"
+                cy="282.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle cx="283.5" cy="282.5" r="48.5" fill="#F4F1D0" />
+              <circle
+                cx="400.5"
+                cy="282.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="517.5"
+                cy="282.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="48.5"
+                cy="399.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="166.5"
+                cy="399.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="283.5"
+                cy="399.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle cx="400.5" cy="399.5" r="48.5" fill="#F4F1D0" />
+              <circle
+                cx="517.5"
+                cy="399.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="48.5"
+                cy="516.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="166.5"
+                cy="516.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="283.5"
+                cy="516.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="400.5"
+                cy="516.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle cx="517.5" cy="516.5" r="48.5" fill="#F4F1D0" />
+            </g>
+          </svg>
+        </div>
+      );
+      break;
+
+    case 14:
+      graphics = (
+        <div
+          className="px-14 py-8 h-3/4 flex flex-col justify-center items-center"
+          style={{ backgroundColor: '#beaa48' }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 598 597">
+            <g
+              fill="none"
+              fillRule="evenodd"
+              transform="rotate(-45 293.76881 309.77343)"
+            >
+              <circle cx="305.5" cy="305.5" r="54.5" fill="#000" opacity=".2" />
+              <path
+                fill="#F4F1D0"
+                fillRule="nonzero"
+                stroke="#F4F1D0"
+                strokeWidth="5"
+                d="M558 251l-9.69375 9.69375 38.3625 38.43125H503v13.75h83.66875l-38.3625 38.43125L558 361l55-55zM55 362l9.69375-9.69375-38.3625-38.43125H110v-13.75H26.33125l38.3625-38.43125L55 252 0 307zM251 55l9.69375 9.69375 38.43125-38.3625V110h13.75V26.33125l38.43125 38.3625L361 55 306 0zM362 557l-9.69375-9.69375-38.43125 38.3625V502h-13.75v83.66875l-38.43125-38.3625L252 557l55 55z"
+              />
+              <path
+                fill="#F4F1D0"
+                fillRule="nonzero"
+                d="M114 115v381h383V115H114zM94 95h423v421H94V95z"
+              />
+            </g>
+          </svg>
+        </div>
+      );
+      break;
+
+    case 15:
+      graphics = (
+        <div
+          className="px-14 py-8 h-3/4 flex flex-col justify-center items-center"
+          style={{ backgroundColor: '#307ec7' }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566 565">
+            <g fill="none" fillRule="evenodd">
+              <circle
+                cx="48.5"
+                cy="48.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="166.5"
+                cy="48.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="283.5"
+                cy="48.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="400.5"
+                cy="48.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="517.5"
+                cy="48.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="48.5"
+                cy="165.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="166.5"
+                cy="165.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="283.5"
+                cy="165.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="400.5"
+                cy="165.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="517.5"
+                cy="165.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="48.5"
+                cy="282.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="166.5"
+                cy="282.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle cx="283.5" cy="282.5" r="48.5" fill="#F4F1D0" />
+              <circle
+                cx="400.5"
+                cy="282.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="517.5"
+                cy="282.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="48.5"
+                cy="399.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="166.5"
+                cy="399.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="283.5"
+                cy="399.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="400.5"
+                cy="399.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="517.5"
+                cy="399.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="48.5"
+                cy="516.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="166.5"
+                cy="516.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="283.5"
+                cy="516.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle
+                cx="400.5"
+                cy="516.5"
+                r="48.5"
+                fill="#000"
+                fillOpacity=".2"
+              />
+              <circle cx="517.5" cy="516.5" r="48.5" fill="#F4F1D0" />
+            </g>
+          </svg>
+        </div>
+      );
+      break;
+
+    case 16:
+      graphics = (
+        <div
+          className="px-14 py-8 h-3/4 flex flex-col justify-center items-center"
+          style={{ backgroundColor: '#4fa852' }}
+        >
+          <svg viewBox="0 0 567 580" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#F4F1D0" fillRule="evenodd">
+              <path d="M94.5 145L0 0h189z" />
+              <path d="M283.5 145L189 0h189z" />
+              <path d="M472.5 145L378 0h189z" />
+              <path fillOpacity=".8" d="M94.5 290L0 145h189z" />
+              <path fillOpacity=".8" d="M283.5 290L189 145h189z" />
+              <path fillOpacity=".8" d="M472.5 290L378 145h189z" />
+              <path fillOpacity=".6" d="M94.5 435L0 290h189z" />
+              <path fillOpacity=".6" d="M283.5 435L189 290h189z" />
+              <path fillOpacity=".6" d="M472.5 435L378 290h189z" />
+              <path fillOpacity=".4" d="M94.5 580L0 435h189z" />
+              <path fillOpacity=".4" d="M283.5 580L189 435h189z" />
+              <path fillOpacity=".4" d="M472.5 580L378 435h189z" />
+            </g>
+          </svg>
+        </div>
+      );
+      break;
+
+    case 17:
+      graphics = (
+        <div
+          className="px-14 py-8 h-3/4 flex flex-col justify-center items-center"
+          style={{ backgroundColor: '#8959a9' }}
+        >
+          <svg viewBox="0 0 566 569" xmlnsXlink="http://www.w3.org/1999/xlink">
+            <rect fill="#F4F1D0" x="0" y="0" width="122" height="122" />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="148"
+              y="0"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="295"
+              y="0"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="444"
+              y="0"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="0"
+              y="149"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="148"
+              y="149"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="295"
+              y="149"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="444"
+              y="149"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="0"
+              y="298"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="148"
+              y="298"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="295"
+              y="298"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="444"
+              y="298"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="0"
+              y="447"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="148"
+              y="447"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="295"
+              y="447"
+              width="122"
+              height="122"
+            />
+            <rect fill="#F4F1D0" x="444" y="447" width="122" height="122" />
+          </svg>
+        </div>
+      );
+      break;
+
+    case 18:
+      graphics = (
+        <div
+          className="px-14 py-8 h-3/4 flex flex-col justify-center items-center"
+          style={{ backgroundColor: '#6fc9b6' }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566 490">
+            <g fill="#F4F1D0" fillRule="evenodd">
+              <path
+                fillRule="nonzero"
+                d="M412.46218 20.76492l-259.60061-.35855L23.427 244.59363l130.11082 224.64145 259.60061.35855L542.573 245.40637 412.46218 20.76492zM424 .78084l141.67622 244.60958-141 244.21916L142 489.21916.32378 244.60958l141-244.21916L424 .78084z"
+              />
+              <path
+                fillRule="nonzero"
+                d="M564 245.5L146 490l129.5-244.5L146 1l418 244.5zM196.57184 53.75106L298.1321 245.5 196.57184 437.24894 524.38803 245.5 196.57182 53.75106zM2 245.5L426 1 295 245.5 426 490 2 245.5zm373.26538 192.15681L272.3102 245.5 375.26538 53.34319 42.03638 245.5l333.229 192.15681z"
+              />
+              <path d="M166 21v449h240V21H166zM146 1h280v489H146V1z" />
+              <path d="M11 256.5v-20h545.00595v20z" />
+            </g>
+          </svg>
+        </div>
+      );
+      break;
+
+    case 19:
+      graphics = (
+        <div
+          className="px-14 py-8 h-3/4 flex flex-col justify-center items-center"
+          style={{ backgroundColor: '#74a679' }}
+        >
+          <svg viewBox="0 0 566 569" xmlnsXlink="http://www.w3.org/1999/xlink">
+            <rect
+              fillOpacity="0.2"
+              fill="#000000"
+              x="0"
+              y="0"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="148"
+              y="0"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="295"
+              y="0"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="444"
+              y="0"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="0"
+              y="149"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="148"
+              y="149"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="295"
+              y="149"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="444"
+              y="149"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="0"
+              y="298"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="148"
+              y="298"
+              width="122"
+              height="122"
+            />
+            <circle id="oval" fill="#F4F1D0" cx="356" cy="359" r="61" />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="444"
+              y="298"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="0"
+              y="447"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="148"
+              y="447"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="295"
+              y="447"
+              width="122"
+              height="122"
+            />
+            <rect
+              fill="#000000"
+              opacity="0.2"
+              x="444"
+              y="447"
+              width="122"
+              height="122"
+            />
+          </svg>
+        </div>
+      );
+      break;
+
+    case 20:
+      graphics = (
+        <div
+          className="px-14 py-8 h-3/4 flex flex-col justify-center items-center"
+          style={{ backgroundColor: '#42928c' }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 566 566">
+            <rect
+              fillOpacity="0.2"
+              fill="#000000"
+              x="0"
+              y="0"
+              width="566"
+              height="68"
+            />
+            <rect
+              fillOpacity="0.2"
+              fill="#000000"
+              x="0"
+              y="83"
+              width="566"
+              height="68"
+            />
+            <rect
+              fillOpacity="0.2"
+              fill="#000000"
+              x="0"
+              y="166"
+              width="566"
+              height="68"
+            />
+            <rect
+              fillOpacity="0.2"
+              fill="#000000"
+              x="0"
+              y="249"
+              width="566"
+              height="68"
+            />
+            <rect
+              fillOpacity="0.2"
+              fill="#000000"
+              x="0"
+              y="332"
+              width="566"
+              height="68"
+            />
+            <rect
+              fillOpacity="0.2"
+              fill="#000000"
+              x="0"
+              y="415"
+              width="566"
+              height="68"
+            />
+            <rect fill="#F4F1D0" x="0" y="498" width="295" height="68" />
+          </svg>
+        </div>
+      );
+      break;
+
     default:
       graphics = (
         <div
