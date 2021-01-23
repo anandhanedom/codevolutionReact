@@ -12,7 +12,7 @@ import ArticleHero from '../../components/articleHero/articleHero.component';
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface IProps extends RouteComponentProps<{ id: string }> {}
 
-const Articles: React.FC<IProps> = () => {
+const Articles: React.FC<IProps> = ({ match }) => {
   const [showNav, setShowNav] = useState(false);
 
   const toggleNav = () => {
@@ -25,14 +25,17 @@ const Articles: React.FC<IProps> = () => {
         <SideNav toggleNav={toggleNav} />
       ) : (
         <div>
-          <NavBar toggleNav={toggleNav} />
+          <NavBar toggleNav={toggleNav} articleNav />
           <div
             className="py-28"
             style={{
               background: '#506485',
             }}
           >
-            <ArticleHero id={1} title="Aesthetic Usability Effect" />
+            <ArticleHero
+              id={+match.params.id}
+              title="Aesthetic Usability Effect"
+            />
           </div>
         </div>
       )}

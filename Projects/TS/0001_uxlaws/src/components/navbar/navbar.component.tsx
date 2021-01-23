@@ -4,11 +4,16 @@ import { Link } from 'react-router-dom';
 
 interface IProps {
   toggleNav: () => void;
+  articleNav: boolean;
 }
 
-const Navbar: React.FC<IProps> = ({ toggleNav }) => {
+const Navbar: React.FC<IProps> = ({ toggleNav, articleNav }) => {
   return (
-    <nav className="flex justify-between p-4 uppercase bg-black text-white font-medium items-center tracking-widest fixed top-0 w-full">
+    <nav
+      className={`${
+        articleNav ? 'bg-transparent' : 'bg - black'
+      } flex justify-between p-4 uppercase text-white font-medium items-center tracking-widest fixed top-0 w-full`}
+    >
       <div>
         <Link to="/">Laws of UX</Link>
       </div>
