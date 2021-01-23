@@ -28,7 +28,7 @@ const SideNav: React.FC<IProps> = ({ toggleNav, history }) => {
         <div className="inline-block text-sm font-body1 text-gray-300">
           {article.id < 10 ? `0${article.id}` : article.id}
         </div>
-        <div className="text-2xl font-bold inline-block ml-7 hover:text-white pr-10 md:pr-20">
+        <div className="text-2xl font-bold inline-block ml-7 hover:text-white pr-10 md:pr-20 text-left">
           {article.title}
         </div>
       </button>

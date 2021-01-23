@@ -11,7 +11,7 @@ const Navbar: React.FC<IProps> = ({ toggleNav, articleNav }) => {
   return (
     <nav
       className={`${
-        articleNav ? 'bg-transparent' : 'bg - black'
+        articleNav ? 'bg-transparent' : 'bg-black'
       } flex justify-between p-4 uppercase text-white font-medium items-center tracking-widest fixed top-0 w-full`}
     >
       <div>
