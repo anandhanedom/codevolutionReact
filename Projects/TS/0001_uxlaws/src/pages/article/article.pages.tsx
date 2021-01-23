@@ -4,6 +4,7 @@ import { RouteComponentProps } from 'react-router-dom';
 // Components
 import NavBar from '../../components/navbar/navbar.component';
 import SideNav from '../../components/sideNav/sidenav.component';
+import ArticleHero from '../../components/articleHero/articleHero.component';
 
 // Articles JSON
 // import articlesJSON from '../../articles.json';
@@ -11,7 +12,7 @@ import SideNav from '../../components/sideNav/sidenav.component';
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface IProps extends RouteComponentProps<{ id: string }> {}
 
-const Articles: React.FC<IProps> = ({ match }) => {
+const Articles: React.FC<IProps> = () => {
   const [showNav, setShowNav] = useState(false);
 
   const toggleNav = () => {
@@ -19,13 +20,20 @@ const Articles: React.FC<IProps> = ({ match }) => {
   };
 
   return (
-    <div className="bg-black font-body">
+    <div className="font-body">
       {showNav ? (
         <SideNav toggleNav={toggleNav} />
       ) : (
         <div>
           <NavBar toggleNav={toggleNav} />
-          <div> {match.params.id}</div>
+          <div
+            className="py-28"
+            style={{
+              background: '#506485',
+            }}
+          >
+            <ArticleHero id={1} title="Aesthetic Usability Effect" />
+          </div>
         </div>
       )}
     </div>

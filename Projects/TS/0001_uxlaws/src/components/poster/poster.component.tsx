@@ -13,7 +13,7 @@ interface IProps {
 
 const Poster: React.FC<IProps> = ({ title, info, id, color }) => {
   return (
-    <article className="flex justify-center poster py-32">
+    <article className="flex justify-center py-32">
       <PosterBody id={id} title={title} color={color} />
       <PosterInfo id={id} info={info} />
     </article>
