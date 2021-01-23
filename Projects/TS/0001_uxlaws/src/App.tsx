@@ -6,14 +6,14 @@ import { ReactComponent as Logo } from './img/notfound.svg';
 
 // Pages
 import HomePage from './pages/home/home.pages';
+import ArticlePage from './pages/article/article.pages';
 
 const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={HomePage} />
-        {/* <Route path="/about" exact component={About} />
-        <Route path="/posts/:id" exact component={Post} /> */}
+        <Route path="/articles/:id" exact component={ArticlePage} />
         <Route
           path="/"
           render={() => (
