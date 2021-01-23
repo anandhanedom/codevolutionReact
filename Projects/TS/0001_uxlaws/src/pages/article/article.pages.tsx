@@ -1,3 +1,4 @@
+/* eslint-disable react/self-closing-comp */
 import React, { useState } from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
@@ -20,11 +21,11 @@ const Articles: React.FC<IProps> = ({ match }) => {
   };
 
   return (
-    <div className="font-body">
+    <div className="font-body bg-black" style={{ color: '#f4f1d0' }}>
       {showNav ? (
         <SideNav toggleNav={toggleNav} />
       ) : (
-        <div>
+        <div className="bg-black" style={{ color: '#fff' }}>
           <NavBar toggleNav={toggleNav} articleNav />
           <div
             className="py-28"
@@ -39,6 +40,24 @@ const Articles: React.FC<IProps> = ({ match }) => {
           </div>
         </div>
       )}
+      <div className="container mx-auto px-4">
+        <div className="py-10 max-w-4xl mx-auto">
+          <h2 className="mb-8">
+            <span
+              style={{
+                height: '1px',
+                backgroundColor: '#f4f1d0',
+              }}
+              className="inline-block w-5 align-middle"
+            ></span>
+            <span className="ml-1 uppercase">Overview</span>
+          </h2>
+          <p className="text-4xl font-bold leading-none text-center sm:text-left">
+            Users often perceive aesthetically pleasing design as design that’s
+            more usable.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
