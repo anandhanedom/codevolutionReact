@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { RouteComponentProps, withRouter } from 'react-router-dom';
 
 // Articles JSON
 import articlesJSON from '../../articles.json';
@@ -10,21 +10,28 @@ interface IArticle {
   info: string;
 }
 
-interface IProps {
+interface IProps extends RouteComponentProps {
   toggleNav: () => void;
 }
 
-const SideNav: React.FC<IProps> = ({ toggleNav }) => {
+const SideNav: React.FC<IProps> = ({ toggleNav, history }) => {
   const options = articlesJSON.map((article: IArticle) => (
     <li key={article.id} className="mb-7 mt-3">
-      <Link to={`/articles/${article.id}`} className="flex items-center">
+      <button
+        type="button"
+        onClick={() => {
+          toggleNav();
+          history.push(`/articles/${article.id}`);
+        }}
+        className="flex items-center"
+      >
         <div className="inline-block text-sm font-body1 text-gray-300">
           {article.id < 10 ? `0${article.id}` : article.id}
         </div>
-        <div className="text-2xl font-bold inline-block ml-7 hover:text-white pr-10 md:pr-20">
+        <div className="text-2xl font-bold inline-block ml-7 hover:text-white pr-10 md:pr-20 text-left">
           {article.title}
         </div>
-      </Link>
+      </button>
     </li>
   ));
 
@@ -127,4 +134,4 @@ const SideNav: React.FC<IProps> = ({ toggleNav }) => {
   );
 };
 
-export default SideNav;
+export default withRouter(SideNav);

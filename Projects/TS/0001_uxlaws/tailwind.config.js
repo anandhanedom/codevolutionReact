@@ -8,6 +8,9 @@ module.exports = {
         body1: ['IBM Plex Mono'],
       },
     },
+    minWidth: {
+      200: '200px',
+    },
   },
   variants: {
     extend: {},

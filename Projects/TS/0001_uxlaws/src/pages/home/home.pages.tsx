@@ -45,7 +45,7 @@ const Home: React.FC = () => {
         <SideNav toggleNav={toggleNav} />
       ) : (
         <div>
-          <NavBar toggleNav={toggleNav} />
+          <NavBar toggleNav={toggleNav} articleNav={false} />
           <div className="container mx-auto px-4">{articles}</div>
           <div className="container py-12">
             <button
