@@ -6,6 +6,7 @@ import { RouteComponentProps, Link } from 'react-router-dom';
 import NavBar from '../../components/navbar/navbar.component';
 import SideNav from '../../components/sideNav/sidenav.component';
 import ArticleHero from '../../components/articleHero/articleHero.component';
+import ArticleFooter from '../../components/articleFooter/articleFooter.component';
 
 // Articles JSON
 // import articlesJSON from '../../articles.json';
@@ -142,6 +143,36 @@ const Articles: React.FC<IProps> = ({ match }) => {
               Further Reading
             </span>
           </h2>
+          <div className="mb-10 leading-8	text-left text-xl font-medium">
+            <ul>
+              <li className="mb-10">
+                <h2 className="font-bold text-4xl">
+                  <u>The Aesthetic-Usability Effect</u>
+                </h2>
+                <p>Kate Moran | Nielsen Norman group</p>
+              </li>
+              <li className="mb-10">
+                <h2 className="font-bold text-4xl">
+                  <u>Aesthetic-Usability Effect</u>
+                </h2>
+                <p>Wikipedia</p>
+              </li>
+              <li className="mb-10">
+                <h2 className="font-bold text-4xl">
+                  <u>
+                    The Aesthetic-Usability Effect: Why beautiful-looking
+                    products are preferred over usable-but-not-beautiful ones.
+                  </u>
+                </h2>
+                <p>Abhishek Chakraborty | Medium</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div style={{ background: '#506485' }}>
+        <div className="container mx-auto px-4">
+          <ArticleFooter />
         </div>
       </div>
     </div>
