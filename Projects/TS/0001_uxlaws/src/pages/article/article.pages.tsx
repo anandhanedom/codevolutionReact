@@ -50,9 +50,9 @@ const Articles: React.FC<IProps> = ({ match }) => {
               }}
               className="inline-block w-5 align-middle"
             ></span>
-            <span className="ml-1 uppercase">Overview</span>
+            <span className="ml-1 uppercase tracking-widest">Overview</span>
           </h2>
-          <p className="text-4xl font-bold leading-none text-center sm:text-left">
+          <p className="text-xl leading-6	sm:text-4xl font-bold text-left">
             Users often perceive aesthetically pleasing design as design that’s
             more usable.
           </p>
