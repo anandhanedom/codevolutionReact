@@ -91,8 +91,11 @@ const Articles: React.FC<IProps> = ({ match }) => {
                 </span>
               </h2>
               <div className="mb-20 leading-8	text-left flex justify-between text-xl font-medium flex-wrap sm:flex-nowrap">
-                {currentArticle[0].takeaways.map((takeaway) => (
-                  <p className="pb-5 sm:min-w-1/3 pr-10">{takeaway}</p>
+                {currentArticle[0].takeaways.map((takeaway, i) => (
+                  // eslint-disable-next-line react/no-array-index-key
+                  <p key={i} className="pb-5 sm:min-w-1/3 pr-10">
+                    {takeaway}
+                  </p>
                 ))}
               </div>
               <Link
