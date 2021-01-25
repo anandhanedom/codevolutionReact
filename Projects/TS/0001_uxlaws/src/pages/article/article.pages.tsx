@@ -1,6 +1,6 @@
 /* eslint-disable react/self-closing-comp */
 import React, { useState } from 'react';
-import { RouteComponentProps } from 'react-router-dom';
+import { RouteComponentProps, Link } from 'react-router-dom';
 
 // Components
 import NavBar from '../../components/navbar/navbar.component';
@@ -74,7 +74,7 @@ const Articles: React.FC<IProps> = ({ match }) => {
               Key Takeaways
             </span>
           </h2>
-          <div className="leading-8	text-left flex justify-between text-xl font-medium flex-wrap sm:flex-nowrap">
+          <div className="mb-10 leading-8	text-left flex justify-between text-xl font-medium flex-wrap sm:flex-nowrap">
             <p className="pb-5 sm:w-1/3 pr-10">
               Aesthetically pleasing design can make users more tolerant of
               minor usability issues.
@@ -89,6 +89,59 @@ const Articles: React.FC<IProps> = ({ match }) => {
               prevent issues from being discovered during usability testing.
             </p>
           </div>
+          <Link
+            className="uppercase px-10 py-4 font-semibold tracking-widest mx-auto block md:inline md:mx-0"
+            to="www.google.com"
+            style={{ background: '#506485' }}
+          >
+            Download The Poster
+          </Link>
+        </div>
+        <div className="pb-10 pt-20 max-w-5xl mx-auto">
+          <h2 className="mb-8">
+            <span
+              style={{
+                height: '1px',
+                backgroundColor: '#f4f1d0',
+              }}
+              className="inline-block w-5 align-middle"
+            ></span>
+            &nbsp;
+            <span className="ml-1 uppercase tracking-widest text-sm">
+              Origins
+            </span>
+          </h2>
+          <p className="leading-8	text-left text-xl font-medium">
+            The aesthetic-usability effect was first studied in the field of
+            human–computer interaction in 1995. Researchers Masaaki Kurosu and
+            Kaori Kashimura from the Hitachi Design Center tested 26 variations
+            of an ATM UI, asking the 252 study participants to rate each design
+            on ease of use, as well as aesthetic appeal. They found a stronger
+            correlation between the participants’ ratings of aesthetic appeal
+            and perceived ease of use than the correlation between their ratings
+            of aesthetic appeal and actual ease of use. Kurosu and Kashimura
+            concluded that users are strongly influenced by the aesthetics of
+            any given interface, even when they try to evaluate the underlying
+            functionality of the system.
+            <p>
+              <u>Source</u>
+            </p>
+          </p>
+        </div>
+        <div className="pb-10 pt-20 max-w-5xl mx-auto">
+          <h2 className="mb-8">
+            <span
+              style={{
+                height: '1px',
+                backgroundColor: '#f4f1d0',
+              }}
+              className="inline-block w-5 align-middle"
+            ></span>
+            &nbsp;
+            <span className="ml-1 uppercase tracking-widest text-sm">
+              Further Reading
+            </span>
+          </h2>
         </div>
       </div>
     </div>
