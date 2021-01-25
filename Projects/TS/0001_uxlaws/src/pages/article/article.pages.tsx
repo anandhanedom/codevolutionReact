@@ -20,6 +20,7 @@ interface IArticle {
   info: string;
   takeaways: string[];
   origins: string;
+  title: string;
 }
 
 const Articles: React.FC<IProps> = ({ match }) => {
@@ -29,11 +30,9 @@ const Articles: React.FC<IProps> = ({ match }) => {
     setShowNav(!showNav);
   };
 
-  const currentArticle = articlesJSON.filter(
-    (article: IArticle) => article.id === +match.params.id
-  );
+  const currentArticle: IArticle = articlesJSON[+match.params.id - 1];
 
-  // console.log(currentArticle);
+  console.log(currentArticle);
 
   return (
     <div className="font-body bg-black" style={{ color: '#f4f1d0' }}>
@@ -45,13 +44,10 @@ const Articles: React.FC<IProps> = ({ match }) => {
           <div
             className="py-28"
             style={{
-              background: currentArticle[0].color,
+              background: currentArticle.color,
             }}
           >
-            <ArticleHero
-              id={currentArticle[0].id}
-              title={currentArticle[0].title}
-            />
+            <ArticleHero id={currentArticle.id} title={currentArticle.title} />
           </div>
         </div>
       )}
@@ -73,7 +69,7 @@ const Articles: React.FC<IProps> = ({ match }) => {
                 </span>
               </h2>
               <p className="text-xl leading-6	sm:text-4xl font-bold text-left pr-5">
-                {currentArticle[0].info}
+                {currentArticle.info}
               </p>
             </div>
             <div className="py-10 max-w-5xl mx-auto">
@@ -91,7 +87,7 @@ const Articles: React.FC<IProps> = ({ match }) => {
                 </span>
               </h2>
               <div className="mb-20 leading-8	text-left flex justify-between text-xl font-medium flex-wrap sm:flex-nowrap">
-                {currentArticle[0].takeaways.map((takeaway, i) => (
+                {currentArticle.takeaways.map((takeaway, i) => (
                   // eslint-disable-next-line react/no-array-index-key
                   <p key={i} className="pb-5 sm:min-w-1/3 pr-10">
                     {takeaway}
@@ -101,7 +97,7 @@ const Articles: React.FC<IProps> = ({ match }) => {
               <Link
                 className="text-center uppercase px-10 py-4 font-semibold tracking-widest mx-auto block md:inline md:mx-0"
                 to="/"
-                style={{ background: currentArticle[0].color }}
+                style={{ background: currentArticle.color }}
               >
                 Download The Poster
               </Link>
@@ -121,7 +117,7 @@ const Articles: React.FC<IProps> = ({ match }) => {
                 </span>
               </h2>
               <div className="leading-8	text-left text-xl font-medium">
-                {currentArticle[0].origins}
+                {currentArticle.origins}
                 <p className="mt-4">
                   <u>Source</u>
                 </p>
@@ -169,16 +165,30 @@ const Articles: React.FC<IProps> = ({ match }) => {
               </div>
             </div>
           </div>
-          <div
-            style={{ background: articlesJSON[currentArticle[0].id + 1].color }}
-          >
-            <div className="container mx-auto px-4">
-              <ArticleFooter
-                nextId={articlesJSON[currentArticle[0].id + 1].id}
-                title={articlesJSON[currentArticle[0].id + 1].title}
-              />
+          {currentArticle.id < articlesJSON.length ? (
+            <div
+              style={{
+                background: articlesJSON[+match.params.id].color,
+              }}
+            >
+              <div className="container mx-auto px-4">
+                <ArticleFooter
+                  nextId={articlesJSON[+match.params.id].id}
+                  title={articlesJSON[+match.params.id].title}
+                />
+              </div>
             </div>
-          </div>
+          ) : (
+            <div
+              style={{
+                background: articlesJSON[0].color,
+              }}
+            >
+              <div className="container mx-auto px-4">
+                <ArticleFooter nextId={1} title={articlesJSON[0].title} />
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>
