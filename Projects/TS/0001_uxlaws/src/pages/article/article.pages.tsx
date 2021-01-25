@@ -91,7 +91,7 @@ const Articles: React.FC<IProps> = ({ match }) => {
             </p>
           </div>
           <Link
-            className="uppercase px-10 py-4 font-semibold tracking-widest mx-auto block md:inline md:mx-0"
+            className="text-center uppercase px-10 py-4 font-semibold tracking-widest mx-auto block md:inline md:mx-0"
             to="www.google.com"
             style={{ background: '#506485' }}
           >
@@ -143,22 +143,22 @@ const Articles: React.FC<IProps> = ({ match }) => {
               Further Reading
             </span>
           </h2>
-          <div className="mb-10 leading-8	text-left text-xl font-medium">
+          <div className="mb-20 leading-8	text-left text-xl font-medium">
             <ul>
               <li className="mb-10">
-                <h2 className="font-bold text-4xl">
+                <h2 className="font-bold text-4xl mb-2">
                   <u>The Aesthetic-Usability Effect</u>
                 </h2>
                 <p>Kate Moran | Nielsen Norman group</p>
               </li>
               <li className="mb-10">
-                <h2 className="font-bold text-4xl">
+                <h2 className="font-bold text-4xl mb-2">
                   <u>Aesthetic-Usability Effect</u>
                 </h2>
                 <p>Wikipedia</p>
               </li>
               <li className="mb-10">
-                <h2 className="font-bold text-4xl">
+                <h2 className="font-bold text-4xl mb-2">
                   <u>
                     The Aesthetic-Usability Effect: Why beautiful-looking
                     products are preferred over usable-but-not-beautiful ones.
