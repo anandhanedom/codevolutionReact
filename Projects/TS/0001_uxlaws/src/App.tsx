@@ -8,9 +8,13 @@ import { ReactComponent as Logo } from './img/notfound.svg';
 import HomePage from './pages/home/home.pages';
 import ArticlePage from './pages/article/article.pages';
 
+// Components
+import ScrollToTop from './components/scrollToTop/scrollToTop.component';
+
 const App: React.FC = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/articles/:id" exact component={ArticlePage} />

@@ -18,6 +18,8 @@ interface IArticle {
   id: number;
   color: string;
   info: string;
+  takeaways: string[];
+  origins: string;
 }
 
 const Articles: React.FC<IProps> = ({ match }) => {
@@ -48,7 +50,7 @@ const Articles: React.FC<IProps> = ({ match }) => {
           >
             <ArticleHero
               id={currentArticle[0].id}
-              title="Aesthetic Usability Effect"
+              title={currentArticle[0].title}
             />
           </div>
         </div>
@@ -88,25 +90,15 @@ const Articles: React.FC<IProps> = ({ match }) => {
                   Key Takeaways
                 </span>
               </h2>
-              <div className="mb-10 leading-8	text-left flex justify-between text-xl font-medium flex-wrap sm:flex-nowrap">
-                <p className="pb-5 sm:w-1/3 pr-10">
-                  Aesthetically pleasing design can make users more tolerant of
-                  minor usability issues.
-                </p>
-                <p className="pb-5 sm:w-1/3 pr-10">
-                  Aesthetically pleasing design creates a positive response in
-                  people’s brains and leads them to believe the design actually
-                  works better.
-                </p>
-                <p className="pb-5 sm:w-1/3 pr-10">
-                  Aesthetically pleasing design can mask usability problems and
-                  prevent issues from being discovered during usability testing.
-                </p>
+              <div className="mb-20 leading-8	text-left flex justify-between text-xl font-medium flex-wrap sm:flex-nowrap">
+                {currentArticle[0].takeaways.map((takeaway) => (
+                  <p className="pb-5 sm:min-w-1/3 pr-10">{takeaway}</p>
+                ))}
               </div>
               <Link
                 className="text-center uppercase px-10 py-4 font-semibold tracking-widest mx-auto block md:inline md:mx-0"
-                to="www.google.com"
-                style={{ background: '#506485' }}
+                to="/"
+                style={{ background: currentArticle[0].color }}
               >
                 Download The Poster
               </Link>
@@ -126,19 +118,8 @@ const Articles: React.FC<IProps> = ({ match }) => {
                 </span>
               </h2>
               <div className="leading-8	text-left text-xl font-medium">
-                The aesthetic-usability effect was first studied in the field of
-                human–computer interaction in 1995. Researchers Masaaki Kurosu
-                and Kaori Kashimura from the Hitachi Design Center tested 26
-                variations of an ATM UI, asking the 252 study participants to
-                rate each design on ease of use, as well as aesthetic appeal.
-                They found a stronger correlation between the participants’
-                ratings of aesthetic appeal and perceived ease of use than the
-                correlation between their ratings of aesthetic appeal and actual
-                ease of use. Kurosu and Kashimura concluded that users are
-                strongly influenced by the aesthetics of any given interface,
-                even when they try to evaluate the underlying functionality of
-                the system.
-                <p>
+                {currentArticle[0].origins}
+                <p className="mt-4">
                   <u>Source</u>
                 </p>
               </div>
@@ -185,9 +166,14 @@ const Articles: React.FC<IProps> = ({ match }) => {
               </div>
             </div>
           </div>
-          <div style={{ background: '#506485' }}>
+          <div
+            style={{ background: articlesJSON[currentArticle[0].id + 1].color }}
+          >
             <div className="container mx-auto px-4">
-              <ArticleFooter />
+              <ArticleFooter
+                nextId={articlesJSON[currentArticle[0].id + 1].id}
+                title={articlesJSON[currentArticle[0].id + 1].title}
+              />
             </div>
           </div>
         </div>
