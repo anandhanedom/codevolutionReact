@@ -9,10 +9,15 @@ import ArticleHero from '../../components/articleHero/articleHero.component';
 import ArticleFooter from '../../components/articleFooter/articleFooter.component';
 
 // Articles JSON
-// import articlesJSON from '../../articles.json';
+import articlesJSON from '../../articles.json';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface IProps extends RouteComponentProps<{ id: string }> {}
+
+interface IArticle {
+  id: number;
+  color: string;
+}
 
 const Articles: React.FC<IProps> = ({ match }) => {
   const [showNav, setShowNav] = useState(false);
@@ -20,6 +25,12 @@ const Articles: React.FC<IProps> = ({ match }) => {
   const toggleNav = () => {
     setShowNav(!showNav);
   };
+
+  const currentArticle = articlesJSON.filter(
+    (article: IArticle) => article.id === +match.params.id
+  );
+
+  // console.log(currentArticle);
 
   return (
     <div className="font-body bg-black" style={{ color: '#f4f1d0' }}>
@@ -31,11 +42,11 @@ const Articles: React.FC<IProps> = ({ match }) => {
           <div
             className="py-28"
             style={{
-              background: '#506485',
+              background: currentArticle[0].color,
             }}
           >
             <ArticleHero
-              id={+match.params.id}
+              id={currentArticle[0].id}
               title="Aesthetic Usability Effect"
             />
           </div>
