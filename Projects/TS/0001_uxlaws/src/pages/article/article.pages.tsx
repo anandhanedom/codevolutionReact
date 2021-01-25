@@ -41,7 +41,7 @@ const Articles: React.FC<IProps> = ({ match }) => {
         </div>
       )}
       <div className="container mx-auto px-4">
-        <div className="py-10 max-w-4xl mx-auto">
+        <div className="py-10 max-w-5xl mx-auto">
           <h2 className="mb-8">
             <span
               style={{
@@ -50,12 +50,45 @@ const Articles: React.FC<IProps> = ({ match }) => {
               }}
               className="inline-block w-5 align-middle"
             ></span>
-            <span className="ml-1 uppercase tracking-widest">Overview</span>
+            &nbsp;
+            <span className="ml-1 uppercase tracking-widest text-sm">
+              Overview
+            </span>
           </h2>
-          <p className="text-xl leading-6	sm:text-4xl font-bold text-left">
+          <p className="text-xl leading-6	sm:text-4xl font-bold text-left pr-5">
             Users often perceive aesthetically pleasing design as design that’s
             more usable.
           </p>
+        </div>
+        <div className="py-10 max-w-5xl mx-auto">
+          <h2 className="mb-8">
+            <span
+              style={{
+                height: '1px',
+                backgroundColor: '#f4f1d0',
+              }}
+              className="inline-block w-5 align-middle"
+            ></span>
+            &nbsp;
+            <span className="ml-1 uppercase tracking-widest text-sm">
+              Key Takeaways
+            </span>
+          </h2>
+          <div className="leading-8	text-left flex justify-between text-xl font-medium flex-wrap sm:flex-nowrap">
+            <p className="pb-5 sm:w-1/3 pr-10">
+              Aesthetically pleasing design can make users more tolerant of
+              minor usability issues.
+            </p>
+            <p className="pb-5 sm:w-1/3 pr-10">
+              Aesthetically pleasing design creates a positive response in
+              people’s brains and leads them to believe the design actually
+              works better.
+            </p>
+            <p className="pb-5 sm:w-1/3 pr-10">
+              Aesthetically pleasing design can mask usability problems and
+              prevent issues from being discovered during usability testing.
+            </p>
+          </div>
         </div>
       </div>
     </div>
