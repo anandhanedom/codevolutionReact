@@ -1,17 +1,27 @@
 /* eslint-disable react/self-closing-comp */
 import React, { useState } from 'react';
-import { RouteComponentProps } from 'react-router-dom';
+import { RouteComponentProps, Link } from 'react-router-dom';
 
 // Components
 import NavBar from '../../components/navbar/navbar.component';
 import SideNav from '../../components/sideNav/sidenav.component';
 import ArticleHero from '../../components/articleHero/articleHero.component';
+import ArticleFooter from '../../components/articleFooter/articleFooter.component';
 
 // Articles JSON
-// import articlesJSON from '../../articles.json';
+import articlesJSON from '../../articles.json';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface IProps extends RouteComponentProps<{ id: string }> {}
+
+interface IArticle {
+  id: number;
+  color: string;
+  info: string;
+  takeaways: string[];
+  origins: string;
+  title: string;
+}
 
 const Articles: React.FC<IProps> = ({ match }) => {
   const [showNav, setShowNav] = useState(false);
@@ -19,6 +29,10 @@ const Articles: React.FC<IProps> = ({ match }) => {
   const toggleNav = () => {
     setShowNav(!showNav);
   };
+
+  const currentArticle: IArticle = articlesJSON[+match.params.id - 1];
+
+  console.log(currentArticle);
 
   return (
     <div className="font-body bg-black" style={{ color: '#f4f1d0' }}>
@@ -30,34 +44,153 @@ const Articles: React.FC<IProps> = ({ match }) => {
           <div
             className="py-28"
             style={{
-              background: '#506485',
+              background: currentArticle.color,
             }}
           >
-            <ArticleHero
-              id={+match.params.id}
-              title="Aesthetic Usability Effect"
-            />
+            <ArticleHero id={currentArticle.id} title={currentArticle.title} />
           </div>
         </div>
       )}
-      <div className="container mx-auto px-4">
-        <div className="py-10 max-w-4xl mx-auto">
-          <h2 className="mb-8">
-            <span
+      {showNav ? null : (
+        <div>
+          <div className="container mx-auto px-4">
+            <div className="py-10 max-w-5xl mx-auto">
+              <h2 className="mb-8">
+                <span
+                  style={{
+                    height: '1px',
+                    backgroundColor: '#f4f1d0',
+                  }}
+                  className="inline-block w-5 align-middle"
+                ></span>
+                &nbsp;
+                <span className="ml-1 uppercase tracking-widest text-sm">
+                  Overview
+                </span>
+              </h2>
+              <p className="text-xl leading-6	sm:text-4xl font-bold text-left pr-5">
+                {currentArticle.info}
+              </p>
+            </div>
+            <div className="py-10 max-w-5xl mx-auto">
+              <h2 className="mb-8">
+                <span
+                  style={{
+                    height: '1px',
+                    backgroundColor: '#f4f1d0',
+                  }}
+                  className="inline-block w-5 align-middle"
+                ></span>
+                &nbsp;
+                <span className="ml-1 uppercase tracking-widest text-sm">
+                  Key Takeaways
+                </span>
+              </h2>
+              <div className="mb-20 leading-8	text-left flex justify-between text-xl font-medium flex-wrap sm:flex-nowrap">
+                {currentArticle.takeaways.map((takeaway, i) => (
+                  // eslint-disable-next-line react/no-array-index-key
+                  <p key={i} className="pb-5 sm:min-w-1/3 pr-10">
+                    {takeaway}
+                  </p>
+                ))}
+              </div>
+              <Link
+                className="text-center uppercase px-10 py-4 font-semibold tracking-widest mx-auto block md:inline md:mx-0"
+                to="/"
+                style={{ background: currentArticle.color }}
+              >
+                Download The Poster
+              </Link>
+            </div>
+            <div className="pb-10 pt-20 max-w-5xl mx-auto">
+              <h2 className="mb-8">
+                <span
+                  style={{
+                    height: '1px',
+                    backgroundColor: '#f4f1d0',
+                  }}
+                  className="inline-block w-5 align-middle"
+                ></span>
+                &nbsp;
+                <span className="ml-1 uppercase tracking-widest text-sm">
+                  Origins
+                </span>
+              </h2>
+              <div className="leading-8	text-left text-xl font-medium">
+                {currentArticle.origins}
+                <p className="mt-4">
+                  <u>Source</u>
+                </p>
+              </div>
+            </div>
+            <div className="pb-10 pt-20 max-w-5xl mx-auto">
+              <h2 className="mb-8">
+                <span
+                  style={{
+                    height: '1px',
+                    backgroundColor: '#f4f1d0',
+                  }}
+                  className="inline-block w-5 align-middle"
+                ></span>
+                &nbsp;
+                <span className="ml-1 uppercase tracking-widest text-sm">
+                  Further Reading
+                </span>
+              </h2>
+              <div className="mb-20 leading-8	text-left text-xl font-medium">
+                <ul>
+                  <li className="mb-10">
+                    <h2 className="font-bold text-4xl mb-2">
+                      <u>The Aesthetic-Usability Effect</u>
+                    </h2>
+                    <p>Kate Moran | Nielsen Norman group</p>
+                  </li>
+                  <li className="mb-10">
+                    <h2 className="font-bold text-4xl mb-2">
+                      <u>Aesthetic-Usability Effect</u>
+                    </h2>
+                    <p>Wikipedia</p>
+                  </li>
+                  <li className="mb-10">
+                    <h2 className="font-bold text-4xl mb-2">
+                      <u>
+                        The Aesthetic-Usability Effect: Why beautiful-looking
+                        products are preferred over usable-but-not-beautiful
+                        ones.
+                      </u>
+                    </h2>
+                    <p>Abhishek Chakraborty | Medium</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          {currentArticle.id < articlesJSON.length ? (
+            <div
               style={{
-                height: '1px',
-                backgroundColor: '#f4f1d0',
+                background: articlesJSON[+match.params.id].color,
               }}
-              className="inline-block w-5 align-middle"
-            ></span>
-            <span className="ml-1 uppercase">Overview</span>
-          </h2>
-          <p className="text-4xl font-bold leading-none text-center sm:text-left">
-            Users often perceive aesthetically pleasing design as design that’s
-            more usable.
-          </p>
+            >
+              <div className="container mx-auto px-4">
+                <ArticleFooter
+                  nextId={articlesJSON[+match.params.id].id}
+                  title={articlesJSON[+match.params.id].title}
+                />
+              </div>
+            </div>
+          ) : (
+            <div
+              style={{
+                background: articlesJSON[0].color,
+              }}
+            >
+              <div className="container mx-auto px-4">
+                <ArticleFooter nextId={1} title={articlesJSON[0].title} />
+              </div>
+            </div>
+          )}
         </div>
-      </div>
+      )}
     </div>
   );
 };
