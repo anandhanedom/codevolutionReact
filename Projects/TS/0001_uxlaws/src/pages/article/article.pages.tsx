@@ -1,6 +1,6 @@
 /* eslint-disable react/self-closing-comp */
 import React, { useState } from 'react';
-import { RouteComponentProps, Link } from 'react-router-dom';
+import { RouteComponentProps, Link, Redirect } from 'react-router-dom';
 
 // Components
 import NavBar from '../../components/navbar/navbar.component';
@@ -38,7 +38,7 @@ const Articles: React.FC<IProps> = ({ match }) => {
 
   const currentArticle: IArticle = articlesJSON[+match.params.id - 1];
 
-  return (
+  return currentArticle ? (
     <div className="font-body bg-black" style={{ color: '#f4f1d0' }}>
       {showNav ? (
         <SideNav toggleNav={toggleNav} />
@@ -213,6 +213,8 @@ const Articles: React.FC<IProps> = ({ match }) => {
         </div>
       )}
     </div>
+  ) : (
+    <Redirect to="/articles/1" />
   );
 };
 
