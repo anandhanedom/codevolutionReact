@@ -9,7 +9,7 @@ module.exports = {
       },
     },
     minWidth: {
-      262: '262px',
+      275: '275px',
     },
   },
   variants: {

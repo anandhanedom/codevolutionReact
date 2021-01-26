@@ -26,7 +26,7 @@ const articleHero: React.FC<IProps> = ({ id, title }) => {
             {title}
           </h1>
         </div>
-        <div className="flex-1 min-w-262 p-10 md:p-0">
+        <div className="flex-1 min-w-275 p-10 md:p-0">
           <SVGImage id={id} />
         </div>
       </div>
