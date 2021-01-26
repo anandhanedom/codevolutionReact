@@ -32,15 +32,26 @@ const Articles: React.FC<IProps> = ({ match }) => {
 
   const currentArticle: IArticle = articlesJSON[+match.params.id - 1];
 
-  console.log(currentArticle);
-
   return (
     <div className="font-body bg-black" style={{ color: '#f4f1d0' }}>
       {showNav ? (
         <SideNav toggleNav={toggleNav} />
       ) : (
         <div className="bg-black" style={{ color: '#fff' }}>
-          <NavBar toggleNav={toggleNav} articleNav />
+          <NavBar
+            toggleNav={toggleNav}
+            articleNav
+            prevId={
+              +match.params.id === 1
+                ? articlesJSON.length
+                : articlesJSON[+match.params.id - 1].id
+            }
+            nextId={
+              +match.params.id < articlesJSON.length
+                ? articlesJSON[+match.params.id].id
+                : 1
+            }
+          />
           <div
             className="py-28"
             style={{

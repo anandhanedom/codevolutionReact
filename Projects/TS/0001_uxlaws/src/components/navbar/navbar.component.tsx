@@ -6,9 +6,16 @@ import { Link } from 'react-router-dom';
 interface IProps {
   toggleNav: () => void;
   articleNav: boolean;
+  prevId?: number;
+  nextId?: number;
 }
 
-const Navbar: React.FC<IProps> = ({ toggleNav, articleNav }) => {
+const Navbar: React.FC<IProps> = ({
+  toggleNav,
+  articleNav,
+  prevId,
+  nextId,
+}) => {
   return (
     <nav
       className={`${
@@ -20,7 +27,7 @@ const Navbar: React.FC<IProps> = ({ toggleNav, articleNav }) => {
       </div>
       {articleNav ? (
         <div className="uppercase md:block hidden">
-          <Link to="/articles/1">Prev</Link>
+          <Link to={`/articles/${prevId}`}>Prev</Link>
           <span
             style={{
               height: '1px',
@@ -28,7 +35,7 @@ const Navbar: React.FC<IProps> = ({ toggleNav, articleNav }) => {
             }}
             className="mx-8 inline-block w-6 align-middle"
           ></span>
-          <Link to="/articles/2">Next</Link>
+          <Link to={`/articles/${nextId}`}>Next</Link>
         </div>
       ) : null}
       <button
