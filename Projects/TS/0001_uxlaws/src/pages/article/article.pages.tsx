@@ -44,7 +44,7 @@ const Articles: React.FC<IProps> = ({ match }) => {
             prevId={
               +match.params.id === 1
                 ? articlesJSON.length
-                : articlesJSON[+match.params.id - 1].id
+                : +match.params.id - 1
             }
             nextId={
               +match.params.id < articlesJSON.length
