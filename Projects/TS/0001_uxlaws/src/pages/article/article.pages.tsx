@@ -14,6 +14,11 @@ import articlesJSON from '../../articles.json';
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface IProps extends RouteComponentProps<{ id: string }> {}
 
+interface IReading {
+  title: string;
+  author: string;
+}
+
 interface IArticle {
   id: number;
   color: string;
@@ -21,6 +26,7 @@ interface IArticle {
   takeaways: string[];
   origins: string;
   title: string;
+  reading: IReading[];
 }
 
 const Articles: React.FC<IProps> = ({ match }) => {
@@ -150,28 +156,15 @@ const Articles: React.FC<IProps> = ({ match }) => {
               </h2>
               <div className="mb-20 leading-8	text-left text-xl font-medium">
                 <ul>
-                  <li className="mb-10">
-                    <h2 className="font-bold text-4xl mb-2">
-                      <u>The Aesthetic-Usability Effect</u>
-                    </h2>
-                    <p>Kate Moran | Nielsen Norman group</p>
-                  </li>
-                  <li className="mb-10">
-                    <h2 className="font-bold text-4xl mb-2">
-                      <u>Aesthetic-Usability Effect</u>
-                    </h2>
-                    <p>Wikipedia</p>
-                  </li>
-                  <li className="mb-10">
-                    <h2 className="font-bold text-4xl mb-2">
-                      <u>
-                        The Aesthetic-Usability Effect: Why beautiful-looking
-                        products are preferred over usable-but-not-beautiful
-                        ones.
-                      </u>
-                    </h2>
-                    <p>Abhishek Chakraborty | Medium</p>
-                  </li>
+                  {currentArticle.reading.map((read, i) => (
+                    // eslint-disable-next-line react/no-array-index-key
+                    <li key={i} className="mb-10">
+                      <h2 className="font-bold text-4xl mb-2">
+                        <u>{read.title}</u>
+                      </h2>
+                      <p>{read.author}</p>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
