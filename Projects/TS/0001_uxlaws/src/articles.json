@@ -9,7 +9,21 @@
       "People are more tolerant of minor usability issues when the design of a product or service is aesthetically pleasing.",
       "Visually pleasing design can mask usability problems and prevent issues from being discovered during usability testing."
     ],
-    "origins": "The aesthetic-usability effect was first studied in the field of human–computer interaction in 1995. Researchers Masaaki Kurosu and Kaori Kashimura from the Hitachi Design Center tested 26 variations of an ATM UI, asking the 252 study participants to rate each design on ease of use, as well as aesthetic appeal. They found a stronger correlation between the participants’ ratings of aesthetic appeal and perceived ease of use than the correlation between their ratings of aesthetic appeal and actual ease of use. Kurosu and Kashimura concluded that users are strongly influenced by the aesthetics of any given interface, even when they try to evaluate the underlying functionality of the system."
+    "origins": "The aesthetic-usability effect was first studied in the field of human–computer interaction in 1995. Researchers Masaaki Kurosu and Kaori Kashimura from the Hitachi Design Center tested 26 variations of an ATM UI, asking the 252 study participants to rate each design on ease of use, as well as aesthetic appeal. They found a stronger correlation between the participants’ ratings of aesthetic appeal and perceived ease of use than the correlation between their ratings of aesthetic appeal and actual ease of use. Kurosu and Kashimura concluded that users are strongly influenced by the aesthetics of any given interface, even when they try to evaluate the underlying functionality of the system.",
+    "reading": [
+      {
+        "title": "The Aesthetic-Usability Effect",
+        "author": "Kate Moran | Nielsen Norman Group"
+      },
+      {
+        "title": "Aesthetic-Usability Effect",
+        "author": "Wikipedia"
+      },
+      {
+        "title": "The Aesthetic-Usability Effect: Why beautiful-looking products are preferred over usable-but-not-beautiful ones.",
+        "author": "Abhishek Chakraborty | Medium"
+      }
+    ]
   },
   {
     "id": 2,
@@ -20,7 +34,17 @@
       "Provide system feedback within 400 ms in order to keep users’ attention and increase productivity.",
       "Use perceived performance to improve response time and reduce the perception of waiting."
     ],
-    "origins": "In 1982 Walter J. Doherty and Ahrvind J. Thadani published, in the IBM Systems Journal, a research paper that set the requirement for computer response time to be 400 milliseconds, not 2,000 (2 seconds) which had been the previous standard. When a human being’s command was executed and returned an answer In under 400 milliseconds, it was deemed to exceed the Doherty threshold, and use of such applications were deemed to be “addicting” to users."
+    "origins": "In 1982 Walter J. Doherty and Ahrvind J. Thadani published, in the IBM Systems Journal, a research paper that set the requirement for computer response time to be 400 milliseconds, not 2,000 (2 seconds) which had been the previous standard. When a human being’s command was executed and returned an answer In under 400 milliseconds, it was deemed to exceed the Doherty threshold, and use of such applications were deemed to be “addicting” to users.",
+    "reading": [
+      {
+        "title": "The Economic Value of Rapid Response Time",
+        "author": "Jim Elliott"
+      },
+      {
+        "title": "This 70s UX gem still applies today",
+        "author": "Michael Gugel | Medium"
+      }
+    ]
   },
   {
     "id": 3,
@@ -32,7 +56,17 @@
       "Touch targets should have ample spacing between each other.",
       "Touch targets should be placed in areas of an interface that allows them to be easily acquired."
     ],
-    "origins": "In 1954, psychologist Paul Fitts, examining the human motor system, showed that the time required to move to a target depends on the distance to it, yet relates inversely to its size. By his law, fast movements and small targets result in greater error rates, due to the speed-accuracy trade-off. Although multiple variants of Fitts’ law exist, all encompass this idea. Fitts’ law is widely applied in user experience (UX) and user interface (UI) design. For example, this law influenced the convention of making interactive buttons large (especially on finger-operated mobile devices)—smaller buttons are more difficult (and time-consuming) to click. Likewise, the distance between a user’s task/attention area and the task-related button should be kept as short as possible."
+    "origins": "In 1954, psychologist Paul Fitts, examining the human motor system, showed that the time required to move to a target depends on the distance to it, yet relates inversely to its size. By his law, fast movements and small targets result in greater error rates, due to the speed-accuracy trade-off. Although multiple variants of Fitts’ law exist, all encompass this idea. Fitts’ law is widely applied in user experience (UX) and user interface (UI) design. For example, this law influenced the convention of making interactive buttons large (especially on finger-operated mobile devices)—smaller buttons are more difficult (and time-consuming) to click. Likewise, the distance between a user’s task/attention area and the task-related button should be kept as short as possible.",
+    "reading": [
+      {
+        "title": "Fitts’s Law: The Importance of Size and Distance in UI Design",
+        "author": "Interaction Design Foundation"
+      },
+      {
+        "title": "Fitts’s Law on Wikipedia",
+        "author": "Wikipedia"
+      }
+    ]
   },
   {
     "id": 4,
@@ -44,7 +78,25 @@
       "Avoid overwhelming users by highlighting recommended options.",
       "Use progressive onboarding to minimize cognitive load for new users."
     ],
-    "origins": "Hick’s Law (or the Hick-Hyman Law) is named after a British and an American psychologist team of William Edmund Hick and Ray Hyman. In 1952, this pair set out to examine the relationship between the number of stimuli present and an individual’s reaction time to any given stimulus. As you would expect, the more stimuli to choose from, the longer it takes the user to make a decision on which one to interact with. Users bombarded with choices have to take time to interpret and decide, giving them work they don’t want."
+    "origins": "Hick’s Law (or the Hick-Hyman Law) is named after a British and an American psychologist team of William Edmund Hick and Ray Hyman. In 1952, this pair set out to examine the relationship between the number of stimuli present and an individual’s reaction time to any given stimulus. As you would expect, the more stimuli to choose from, the longer it takes the user to make a decision on which one to interact with. Users bombarded with choices have to take time to interpret and decide, giving them work they don’t want.",
+    "reading": [
+      {
+        "title": "Hick’s Law: Making the choice easier for users",
+        "author": "Mads Soegaard | Interaction Design Foundation"
+      },
+      {
+        "title": "Hick’s Law — Quick Decision Making",
+        "author": "Anton Nikolov | Medium.com"
+      },
+      {
+        "title": "The Psychology Principles Every UI/UX Designer Needs to Know",
+        "author": "Thanasis Rigopoulos | Marvel"
+      },
+      {
+        "title": "Hick’s Law on Wikipedia",
+        "author": "Wikipedia"
+      }
+    ]
   },
   {
     "id": 5,
@@ -56,7 +108,17 @@
       "By leveraging existing mental models, we can create superior user experiences in which the user can focus on their task rather than learning new models.",
       "Minimize discordance by empowering users to continue using a familiar version for a limited time."
     ],
-    "origins": "Jakob's Law was coined by Jakob Nielsen, a User Advocate and principal of the Nielsen Norman Group which he co-founded with Dr. Donald A. Norman (former VP of research at Apple Computer). Dr. Nielsen established the 'discount usability engineering' movement for fast and cheap improvements of user interfaces and has invented several usability methods, including heuristic evaluation."
+    "origins": "Jakob's Law was coined by Jakob Nielsen, a User Advocate and principal of the Nielsen Norman Group which he co-founded with Dr. Donald A. Norman (former VP of research at Apple Computer). Dr. Nielsen established the 'discount usability engineering' movement for fast and cheap improvements of user interfaces and has invented several usability methods, including heuristic evaluation.",
+    "reading": [
+      {
+        "title": "Jakob’s Law of Internet User Experience",
+        "author": "Nielsen Norman Group"
+      },
+      {
+        "title": "Top 10 Mistakes in Web Design",
+        "author": "Nielsen Norman Group"
+      }
+    ]
   },
   {
     "id": 6,
@@ -67,7 +129,17 @@
       "Adding a border around an element or group of elements is an easy way to create common region.",
       "Common region can be created by defining a background behind an element or group of elements."
     ],
-    "origins": "The principles of grouping (or Gestalt laws of grouping) are a set of principles in psychology, first proposed by Gestalt psychologists to account for the observation that humans naturally perceive objects as organized patterns and objects, a principle known as Prägnanz. Gestalt psychologists argued that these principles exist because the mind has an innate disposition to perceive patterns in the stimulus based on certain rules. These principles are organized into five categories: Proximity, Similarity, Continuity, Closure, and Connectedness."
+    "origins": "The principles of grouping (or Gestalt laws of grouping) are a set of principles in psychology, first proposed by Gestalt psychologists to account for the observation that humans naturally perceive objects as organized patterns and objects, a principle known as Prägnanz. Gestalt psychologists argued that these principles exist because the mind has an innate disposition to perceive patterns in the stimulus based on certain rules. These principles are organized into five categories: Proximity, Similarity, Continuity, Closure, and Connectedness.",
+    "reading": [
+      {
+        "title": "Design Principles: Visual Perception And The Principles Of Gestalt",
+        "author": "Steven Bradley | Smashing Magazine"
+      },
+      {
+        "title": "Gestalt principles",
+        "author": "Scholarpedia"
+      }
+    ]
   },
   {
     "id": 7,
@@ -78,7 +150,17 @@
       "The human eye likes to find simplicity and order in complex shapes because it prevents us from becoming overwhelmed with information.",
       "Research confirms that people are better able to visually process and remember simple figures than complex figures."
     ],
-    "origins": "In 1910, psychologist Max Wertheimer had an insight when he observed a series of lights flashing on and off at a railroad crossing. It was similar to how the lights encircling a movie theater marquee flash on and off. To the observer, it appears as if a single light moves around the marquee, traveling from bulb to bulb, when in reality it’s a series of bulbs turning on and off and the lights don’t move it all. This observation led to a set of descriptive principles about how we visually perceive objects. These principles sit at the heart of nearly everything we do graphically as designers."
+    "origins": "In 1910, psychologist Max Wertheimer had an insight when he observed a series of lights flashing on and off at a railroad crossing. It was similar to how the lights encircling a movie theater marquee flash on and off. To the observer, it appears as if a single light moves around the marquee, traveling from bulb to bulb, when in reality it’s a series of bulbs turning on and off and the lights don’t move it all. This observation led to a set of descriptive principles about how we visually perceive objects. These principles sit at the heart of nearly everything we do graphically as designers.",
+    "reading": [
+      {
+        "title": "Design Principles: Visual Perception And The Principles Of Gestalt",
+        "author": "Steven Bradley | Smashing Magazine"
+      },
+      {
+        "title": "The Laws of Figure/Ground, Prägnanz, Closure, and Common Fate",
+        "author": "Mads Soegaard | Interation Design Foundation"
+      }
+    ]
   },
   {
     "id": 8,
@@ -89,7 +171,21 @@
       "Proximity helps to establish a relationship with nearby objects.",
       "Proximity helps users understand and organize information faster and more efficiently."
     ],
-    "origins": "The principles of grouping (or Gestalt laws of grouping) are a set of principles in psychology, first proposed by Gestalt psychologists to account for the observation that humans naturally perceive objects as organized patterns and objects, a principle known as Prägnanz. Gestalt psychologists argued that these principles exist because the mind has an innate disposition to perceive patterns in the stimulus based on certain rules. These principles are organized into five categories: Proximity, Similarity, Continuity, Closure, and Connectedness."
+    "origins": "The principles of grouping (or Gestalt laws of grouping) are a set of principles in psychology, first proposed by Gestalt psychologists to account for the observation that humans naturally perceive objects as organized patterns and objects, a principle known as Prägnanz. Gestalt psychologists argued that these principles exist because the mind has an innate disposition to perceive patterns in the stimulus based on certain rules. These principles are organized into five categories: Proximity, Similarity, Continuity, Closure, and Connectedness.",
+    "reading": [
+      {
+        "title": "Laws of Proximity, Uniform Connectedness, and Continuation",
+        "author": "Mads Soegaard | Interation Design Foundation"
+      },
+      {
+        "title": "The Psychology Principles Every UI/UX Designer Needs to Know",
+        "author": "Thanasis Rigopoulos | Marvel"
+      },
+      {
+        "title": "Design Principles: Visual Perception And The Principles Of Gestalt",
+        "author": "Steven Bradley | Smashing Magazine"
+      }
+    ]
   },
   {
     "id": 9,
@@ -99,7 +195,21 @@
     "takeaways": [
       "Ensure that links and navigation systems are visually differentiated from normal text elements, and are consistently styled."
     ],
-    "origins": "The principles of grouping (or Gestalt laws of grouping) are a set of principles in psychology, first proposed by Gestalt psychologists to account for the observation that humans naturally perceive objects as organized patterns and objects, a principle known as Prägnanz. Gestalt psychologists argued that these principles exist because the mind has an innate disposition to perceive patterns in the stimulus based on certain rules. These principles are organized into five categories: Proximity, Similarity, Continuity, Closure, and Connectedness."
+    "origins": "The principles of grouping (or Gestalt laws of grouping) are a set of principles in psychology, first proposed by Gestalt psychologists to account for the observation that humans naturally perceive objects as organized patterns and objects, a principle known as Prägnanz. Gestalt psychologists argued that these principles exist because the mind has an innate disposition to perceive patterns in the stimulus based on certain rules. These principles are organized into five categories: Proximity, Similarity, Continuity, Closure, and Connectedness.",
+    "reading": [
+      {
+        "title": "The Law of Similarity - Gestalt Principles",
+        "author": "Interaction Deisgn Foundation | Mads Soegaard"
+      },
+      {
+        "title": "Design Principles: Visual Perception And The Principles Of Gestalt",
+        "author": "Steven Bradley | Smashing Magazine"
+      },
+      {
+        "title": "Use Gestalt Laws to Improve Your UX",
+        "author": "Sabina Idler | Usabilla Blog"
+      }
+    ]
   },
   {
     "id": 10,
@@ -109,7 +219,21 @@
     "takeaways": [
       "Group functions of a similar nature so they are visually connected via colors, lines, frames, or other shapes."
     ],
-    "origins": "The principles of grouping (or Gestalt laws of grouping) are a set of principles in psychology, first proposed by Gestalt psychologists to account for the observation that humans naturally perceive objects as organized patterns and objects, a principle known as Prägnanz. Gestalt psychologists argued that these principles exist because the mind has an innate disposition to perceive patterns in the stimulus based on certain rules. These principles are organized into five categories: Proximity, Similarity, Continuity, Closure, and Connectedness."
+    "origins": "The principles of grouping (or Gestalt laws of grouping) are a set of principles in psychology, first proposed by Gestalt psychologists to account for the observation that humans naturally perceive objects as organized patterns and objects, a principle known as Prägnanz. Gestalt psychologists argued that these principles exist because the mind has an innate disposition to perceive patterns in the stimulus based on certain rules. These principles are organized into five categories: Proximity, Similarity, Continuity, Closure, and Connectedness.",
+    "reading": [
+      {
+        "title": "Gestalt Principles of Perception",
+        "author": "Andy Rutledge"
+      },
+      {
+        "title": "Laws of Proximity, Uniform Connectedness, and Continuation",
+        "author": "Interaction Design Foundation | Mads Soegaard"
+      },
+      {
+        "title": "Design Principles: Visual Perception And The Principles Of Gestalt",
+        "author": "Steven Bradley | Smashing Magazine"
+      }
+    ]
   },
   {
     "id": 11,
@@ -119,7 +243,21 @@
     "takeaways": [
       "Chunking is an effective method of presenting groups of content in a manageable way. Organize content in groups of 5-9 items at a time."
     ],
-    "origins": "In 1956, George Miller asserted that the span of immediate memory and absolute judgment were both limited to around 7 pieces of information. The main unit of information is the bit, the amount of data necessary to make a choice between two equally likely alternatives. Likewise, 4 bits of information is a decision between 16 binary alternatives (4 successive binary decisions). The point where confusion creates an incorrect judgment is the channel capacity. In other words, the quantity of bits which can be transmitted reliably through a channel, within a certain amount of time."
+    "origins": "In 1956, George Miller asserted that the span of immediate memory and absolute judgment were both limited to around 7 pieces of information. The main unit of information is the bit, the amount of data necessary to make a choice between two equally likely alternatives. Likewise, 4 bits of information is a decision between 16 binary alternatives (4 successive binary decisions). The point where confusion creates an incorrect judgment is the channel capacity. In other words, the quantity of bits which can be transmitted reliably through a channel, within a certain amount of time.",
+    "reading": [
+      {
+        "title": "Miller’s Law, Chunking, and the Capacity of Working Memory",
+        "author": "Khan Academy"
+      },
+      {
+        "title": "Design Principles for Reducing Cognitive Load",
+        "author": "Jon Yablonski | Medium.com"
+      },
+      {
+        "title": "Miller’s Law on Wikipedia",
+        "author": "Wikipedia"
+      }
+    ]
   },
   {
     "id": 12,
@@ -129,7 +267,21 @@
     "takeaways": [
       "Analyze each element and remove as many as possible, without compromising the overall function."
     ],
-    "origins": "Occam's razor (also Ockham's razor; Latin: lex parsimoniae 'law of parsimony') is a problem-solving principle that, when presented with competing hypothetical answers to a problem, one should select the one that makes the fewest assumptions. The idea is attributed to William of Ockham (c. 1287–1347), who was an English Franciscan friar, scholastic philosopher, and theologian."
+    "origins": "Occam's razor (also Ockham's razor; Latin: lex parsimoniae 'law of parsimony') is a problem-solving principle that, when presented with competing hypothetical answers to a problem, one should select the one that makes the fewest assumptions. The idea is attributed to William of Ockham (c. 1287–1347), who was an English Franciscan friar, scholastic philosopher, and theologian.",
+    "reading": [
+      {
+        "title": "Designing with Occam’s Razor",
+        "author": "Jon Yablonski | Medium"
+      },
+      {
+        "title": "Occam’s Razor: The Simplest Solution is Always the Best",
+        "author": "Mads Soegaard | Interaction Design Foundation"
+      },
+      {
+        "title": "Occam’s Razor: A Great Principle for Designers",
+        "author": "Web Designer Depot"
+      }
+    ]
   },
   {
     "id": 13,
@@ -139,7 +291,25 @@
     "takeaways": [
       "Focus the majority of effort on the areas that will bring the largest benefits to the most users."
     ],
-    "origins": "Its origins stem back to Vilfredo Pareto, an economist who noticed 80% of Italy’s land was owned by 20% of the population. Though it might seem vague, the 80/20 way of thinking can provide insightful and endlessly applicable analysis of lopsided systems, including user experience strategy."
+    "origins": "Its origins stem back to Vilfredo Pareto, an economist who noticed 80% of Italy’s land was owned by 20% of the population. Though it might seem vague, the 80/20 way of thinking can provide insightful and endlessly applicable analysis of lopsided systems, including user experience strategy.",
+    "reading": [
+      {
+        "title": "The 80/20 Rule in User Experience",
+        "author": "Arin Bhowmick | Medium"
+      },
+      {
+        "title": "Applying the Pareto Principle to the User Experience",
+        "author": "Jeff Sauro | Measuring U"
+      },
+      {
+        "title": "The Pareto Principle and Your User Experience Work",
+        "author": "Interaction Design Foundation"
+      },
+      {
+        "title": "Pareto Principle on Wikipedia",
+        "author": "Wikipedia"
+      }
+    ]
   },
   {
     "id": 14,
@@ -149,7 +319,17 @@
     "takeaways": [
       "Any errand will blow up until the entirety of the accessible time is spent."
     ],
-    "origins": "Articulated by Cyril Northcote Parkinson as part of the first sentence of a humorous essay published in The Economist in 1955 and since republished online, it was reprinted with other essays in the book Parkinson's Law: The Pursuit of Progress (London, John Murray, 1958). He derived the dictum from his extensive experience in the British Civil Service."
+    "origins": "Articulated by Cyril Northcote Parkinson as part of the first sentence of a humorous essay published in The Economist in 1955 and since republished online, it was reprinted with other essays in the book Parkinson's Law: The Pursuit of Progress (London, John Murray, 1958). He derived the dictum from his extensive experience in the British Civil Service.",
+    "reading": [
+      {
+        "title": "Parkinson’s Law on Wikipedia",
+        "author": "Wikipedia"
+      },
+      {
+        "title": "Parkinson’s Law: Why Constraints Are The Best Thing You Can Work With",
+        "author": "Louis Chew | Medium.com"
+      }
+    ]
   },
   {
     "id": 15,
@@ -161,7 +341,25 @@
       "Identify the moments when your product is most helpful, valuable, or entertaining and design to make those moments even better.",
       "Remember that people recall negative experiences more vividly than positive ones."
     ],
-    "origins": "A 1993 study titled 'When More Pain Is Preferred to Less: Adding a Better End' by Kahneman, Fredrickson, Charles Schreiber, and Donald Redelmeier provided groundbreaking evidence for the peak–end rule. Participants were subjected to two different versions of a single unpleasant experience. The first trial had subjects submerge a hand in 14°C water for 60 seconds. The second trial had subjects submerge the other hand in 14°C water for 60 seconds, but then keep their hand submerged for an additional 30 seconds, during which the temperature was raised to 15 °C. Subjects were then offered the option of which trial to repeat. Against the law of temporal monotonicity, subjects were more willing to repeat the second trial, despite a prolonged exposure to uncomfortable temperatures. Kahneman et al. concluded that 'subjects chose the long trial simply because they liked the memory of it better than the alternative (or disliked it less)'."
+    "origins": "A 1993 study titled 'When More Pain Is Preferred to Less: Adding a Better End' by Kahneman, Fredrickson, Charles Schreiber, and Donald Redelmeier provided groundbreaking evidence for the peak–end rule. Participants were subjected to two different versions of a single unpleasant experience. The first trial had subjects submerge a hand in 14°C water for 60 seconds. The second trial had subjects submerge the other hand in 14°C water for 60 seconds, but then keep their hand submerged for an additional 30 seconds, during which the temperature was raised to 15 °C. Subjects were then offered the option of which trial to repeat. Against the law of temporal monotonicity, subjects were more willing to repeat the second trial, despite a prolonged exposure to uncomfortable temperatures. Kahneman et al. concluded that 'subjects chose the long trial simply because they liked the memory of it better than the alternative (or disliked it less)'.",
+    "reading": [
+      {
+        "title": "The Peak–End Rule: How Impressions Become Memories",
+        "author": "Nielsen Norman Group"
+      },
+      {
+        "title": "Peak–End Rule",
+        "author": "UX Collective"
+      },
+      {
+        "title": "What is Peak-End Theory? A Psychologist Explains How Our Memory Fools Us",
+        "author": "Positive Psychology"
+      },
+      {
+        "title": "Peak–End Rule",
+        "author": "Wikipedia"
+      }
+    ]
   },
   {
     "id": 16,
@@ -171,7 +369,29 @@
     "takeaways": [
       "Be empathetic, flexible, and tolerant to any number of actions the user could possibly take. This means accepting variable input from users, translating input to meet the requirements, defining boundaries for input, and providing clear feedback to the user."
     ],
-    "origins": "Postel's Law (also known as the Robustness Principle) was formulated by Jon Postel, an early pioneer of the Internet. The Law is a design guideline for software, specifically in regards to TCP and networks."
+    "origins": "Postel's Law (also known as the Robustness Principle) was formulated by Jon Postel, an early pioneer of the Internet. The Law is a design guideline for software, specifically in regards to TCP and networks.",
+    "reading": [
+      {
+        "title": "Design Systems and Postel’s Law",
+        "author": "Mark Boulton"
+      },
+      {
+        "title": "Robustness and Least Power",
+        "author": "Adactio"
+      },
+      {
+        "title": "Your Website has Two Faces",
+        "author": "A List Apart"
+      },
+      {
+        "title": "Design with Difficult Data",
+        "author": "Steven Garrity"
+      },
+      {
+        "title": "Robustness Principle",
+        "author": "Wikipedia"
+      }
+    ]
   },
   {
     "id": 17,
@@ -182,7 +402,25 @@
       "Placing the least important items in the middle of lists can be helpful because these items tend to be stored less frequently in long-term and working memory.",
       "Positioning key actions on the far left and right within elements such as navigation can increase memorization."
     ],
-    "origins": "The serial position effect, a term coined by Herman Ebbinghaus, describes how the position of an item in a sequence affects recall accuracy. The two concepts involved, the primacy effect and the recency effect, explains how items presented at the beginning of a sequence and the end of a sequence are recalled with greater accuracy than items in the middle of a list. Manipulation of the serial position effect to create better user experiences is reflected in many popular designs by successful companies like Apple, Electronic Arts, and Nike."
+    "origins": "The serial position effect, a term coined by Herman Ebbinghaus, describes how the position of an item in a sequence affects recall accuracy. The two concepts involved, the primacy effect and the recency effect, explains how items presented at the beginning of a sequence and the end of a sequence are recalled with greater accuracy than items in the middle of a list. Manipulation of the serial position effect to create better user experiences is reflected in many popular designs by successful companies like Apple, Electronic Arts, and Nike.",
+    "reading": [
+      {
+        "title": "Serial Position Effect: How to Create Better User Interfaces",
+        "author": "Euphemia Wong | Interaction Design Foundation"
+      },
+      {
+        "title": "The Serial Position Effect: Why ABC and XYZ Stand Out the Most Among All the Alphabets.",
+        "author": "Abhishek Chakraborty | Medium.com"
+      },
+      {
+        "title": "Psychology in Design (Part 1)",
+        "author": "Andri Budzinskiy | Medium.com"
+      },
+      {
+        "title": "Serial Position Effect on Wikipedia",
+        "author": "Wikipedia"
+      }
+    ]
   },
   {
     "id": 18,
@@ -194,7 +432,29 @@
       "Ensure as much as possible of the burden is lifted from users by dealing with inherent complexity during design and development.",
       "Take care not to simplify interfaces to the point of abstraction."
     ],
-    "origins": "While working for Xerox PARC in the mid-1980s, Larry Tesler realized that the way users interact with applications was just as important as the application itself. The book Designing for Interaction by Dan Saffer, includes an interview with Larry Tesler that describes the law of conservation of complexity. The interview is popular among user experience and interaction designers. Larry Tesler argues that, in most cases, an engineer should spend an extra week reducing the complexity of an application versus making millions of users spend an extra minute using the program because of the extra complexity However, Bruce Tognazzini proposes that people resist reductions to the amount of complexity in their lives. Thus, when an application is simplified, users begin attempting more complex tasks."
+    "origins": "While working for Xerox PARC in the mid-1980s, Larry Tesler realized that the way users interact with applications was just as important as the application itself. The book Designing for Interaction by Dan Saffer, includes an interview with Larry Tesler that describes the law of conservation of complexity. The interview is popular among user experience and interaction designers. Larry Tesler argues that, in most cases, an engineer should spend an extra week reducing the complexity of an application versus making millions of users spend an extra minute using the program because of the extra complexity However, Bruce Tognazzini proposes that people resist reductions to the amount of complexity in their lives. Thus, when an application is simplified, users begin attempting more complex tasks.",
+    "reading": [
+      {
+        "title": "Explaining the Law of Conservation of Complexity",
+        "author": "Michael Calleia | Humanist.co"
+      },
+      {
+        "title": "Controls are Choices",
+        "author": "Dan Saffer | Medium.com"
+      },
+      {
+        "title": "Simplicity is Overrated",
+        "author": "Gabriel Colombo | Marvel"
+      },
+      {
+        "title": "Nobody Wants To Use Your Product",
+        "author": "Goran Peuc | Smashing Magazine"
+      },
+      {
+        "title": "Law of Conservation of Complexity on Wikipedia",
+        "author": "Wikipedia"
+      }
+    ]
   },
   {
     "id": 19,
@@ -204,7 +464,21 @@
     "takeaways": [
       "Make important information or key actions visually distinctive."
     ],
-    "origins": "The theory was coined by German psychiatrist and pediatrician Hedwig von Restorff (1906–1962), who, in her 1933 study, found that when participants were presented with a list of categorically similar items with one distinctive, isolated item on the list, memory for the item was improved."
+    "origins": "The theory was coined by German psychiatrist and pediatrician Hedwig von Restorff (1906–1962), who, in her 1933 study, found that when participants were presented with a list of categorically similar items with one distinctive, isolated item on the list, memory for the item was improved.",
+    "reading": [
+      {
+        "title": "Psychology in Design (Part 1)",
+        "author": "Andri Budzinskiy | Medium.com"
+      },
+      {
+        "title": "The Psychology Principles Every UI/UX Designer Needs to Know",
+        "author": "Thanasis Rigopoulos | Marvel"
+      },
+      {
+        "title": "Von Restorff Effect on Wikipedia",
+        "author": "Wikipedia"
+      }
+    ]
   },
   {
     "id": 20,
@@ -214,6 +488,20 @@
     "takeaways": [
       "Use progress bars for complex tasks to visually indicate when a task is incomplete, and thus increase the likelihood it will be completed."
     ],
-    "origins": "Bluma Wulfovna Zeigarnik (1900 – 1988) was a Soviet psychologist and psychiatrist, a member of the Berlin School of experimental psychology and Vygotsky Circle. She discovered the Zeigarnik effect and contributed to the establishment of experimental psychopathology as a separate discipline in the Soviet Union in the post-World War II period. In the 1920s she conducted a study on memory, in which she compared memory in relation to incomplete and complete tasks. She had found that incomplete tasks are easier to remember than successful ones. This is now known as the Zeigarnik effect. She later began working at the Institute of Higher Nervous Activity which is where she would meet her next big influence Vygowski, and become a part of his circle of scientists. It was also there that Zeigarnik founded the Department of Psychology. During that time, Zeigarnik received the Lewin Memorial Award in 1983 for her psychological research."
+    "origins": "Bluma Wulfovna Zeigarnik (1900 – 1988) was a Soviet psychologist and psychiatrist, a member of the Berlin School of experimental psychology and Vygotsky Circle. She discovered the Zeigarnik effect and contributed to the establishment of experimental psychopathology as a separate discipline in the Soviet Union in the post-World War II period. In the 1920s she conducted a study on memory, in which she compared memory in relation to incomplete and complete tasks. She had found that incomplete tasks are easier to remember than successful ones. This is now known as the Zeigarnik effect. She later began working at the Institute of Higher Nervous Activity which is where she would meet her next big influence Vygowski, and become a part of his circle of scientists. It was also there that Zeigarnik founded the Department of Psychology. During that time, Zeigarnik received the Lewin Memorial Award in 1983 for her psychological research.",
+    "reading": [
+      {
+        "title": "The Zeigarnik Effect: Why it is so hard to leave things incomplete",
+        "author": "Abhishek Chakraborty | Medium.com"
+      },
+      {
+        "title": "Zeigarnik Effect",
+        "author": "Coglode"
+      },
+      {
+        "title": "Zeigarnik Effect on Wikipedia",
+        "author": "Wikipedia"
+      }
+    ]
   }
 ]

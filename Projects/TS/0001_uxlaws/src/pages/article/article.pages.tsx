@@ -1,6 +1,6 @@
 /* eslint-disable react/self-closing-comp */
 import React, { useState } from 'react';
-import { RouteComponentProps, Link } from 'react-router-dom';
+import { RouteComponentProps, Link, Redirect } from 'react-router-dom';
 
 // Components
 import NavBar from '../../components/navbar/navbar.component';
@@ -14,6 +14,11 @@ import articlesJSON from '../../articles.json';
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface IProps extends RouteComponentProps<{ id: string }> {}
 
+interface IReading {
+  title: string;
+  author: string;
+}
+
 interface IArticle {
   id: number;
   color: string;
@@ -21,6 +26,7 @@ interface IArticle {
   takeaways: string[];
   origins: string;
   title: string;
+  reading: IReading[];
 }
 
 const Articles: React.FC<IProps> = ({ match }) => {
@@ -32,15 +38,26 @@ const Articles: React.FC<IProps> = ({ match }) => {
 
   const currentArticle: IArticle = articlesJSON[+match.params.id - 1];
 
-  console.log(currentArticle);
-
-  return (
+  return currentArticle ? (
     <div className="font-body bg-black" style={{ color: '#f4f1d0' }}>
       {showNav ? (
         <SideNav toggleNav={toggleNav} />
       ) : (
         <div className="bg-black" style={{ color: '#fff' }}>
-          <NavBar toggleNav={toggleNav} articleNav />
+          <NavBar
+            toggleNav={toggleNav}
+            articleNav
+            prevId={
+              +match.params.id === 1
+                ? articlesJSON.length
+                : +match.params.id - 1
+            }
+            nextId={
+              +match.params.id < articlesJSON.length
+                ? articlesJSON[+match.params.id].id
+                : 1
+            }
+          />
           <div
             className="py-28"
             style={{
@@ -139,28 +156,32 @@ const Articles: React.FC<IProps> = ({ match }) => {
               </h2>
               <div className="mb-20 leading-8	text-left text-xl font-medium">
                 <ul>
-                  <li className="mb-10">
-                    <h2 className="font-bold text-4xl mb-2">
-                      <u>The Aesthetic-Usability Effect</u>
-                    </h2>
-                    <p>Kate Moran | Nielsen Norman group</p>
-                  </li>
-                  <li className="mb-10">
-                    <h2 className="font-bold text-4xl mb-2">
-                      <u>Aesthetic-Usability Effect</u>
-                    </h2>
-                    <p>Wikipedia</p>
-                  </li>
-                  <li className="mb-10">
-                    <h2 className="font-bold text-4xl mb-2">
-                      <u>
-                        The Aesthetic-Usability Effect: Why beautiful-looking
-                        products are preferred over usable-but-not-beautiful
-                        ones.
-                      </u>
-                    </h2>
-                    <p>Abhishek Chakraborty | Medium</p>
-                  </li>
+                  {currentArticle.reading.map((read, i) => (
+                    // eslint-disable-next-line react/no-array-index-key
+                    <li key={i} className="mb-10">
+                      <h2 className="font-bold text-4xl mb-2">
+                        <u>
+                          {read.title}
+                          <svg
+                            className="inline ml-2"
+                            style={{ width: '20px' }}
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                            />
+                          </svg>
+                        </u>
+                      </h2>
+                      <p>{read.author}</p>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -192,6 +213,8 @@ const Articles: React.FC<IProps> = ({ match }) => {
         </div>
       )}
     </div>
+  ) : (
+    <Redirect to="/articles/1" />
   );
 };
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 
 // Articles JSON
@@ -15,6 +15,10 @@ interface IProps extends RouteComponentProps {
 }
 
 const SideNav: React.FC<IProps> = ({ toggleNav, history }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const options = articlesJSON.map((article: IArticle) => (
     <li key={article.id} className="mb-7 mt-3">
       <button

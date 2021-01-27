@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import './App.css';
 
 import { ReactComponent as Logo } from './img/notfound.svg';
@@ -17,6 +17,7 @@ const App: React.FC = () => {
       <ScrollToTop />
       <Switch>
         <Route path="/" exact component={HomePage} />
+        <Redirect from="/articles/0" to="/articles/1" />
         <Route path="/articles/:id" exact component={ArticlePage} />
         <Route
           path="/"
