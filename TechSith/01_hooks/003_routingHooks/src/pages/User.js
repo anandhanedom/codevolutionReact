@@ -2,9 +2,13 @@ import React from 'react';
 import { useParams } from 'react-router';
 
 const User = () => {
-  const { name } = useParams();
+  const { firstName, lastName } = useParams();
 
-  return <div>User : {name}</div>;
+  return (
+    <div>
+      User : {firstName} {lastName}
+    </div>
+  );
 };
 
 export default User;
