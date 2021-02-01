@@ -27,7 +27,7 @@ class App extends Component {
 
     const item = {
       title: this.state.currentItem,
-      user: this.state.username,
+      user: this.state.user.displayName || this.state.user.email,
     };
 
     itemsRef.push(item);
@@ -115,50 +115,54 @@ class App extends Component {
             <div className="user-profile">
               <img alt="profilePic" src={this.state.user.photoURL} />
             </div>
+            <div className="container">
+              <section className="add-item">
+                <form onSubmit={this.handleSubmit}>
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="What's your name?"
+                    value={this.state.user.displayName || this.state.user.email}
+                  />
+                  <input
+                    type="text"
+                    name="currentItem"
+                    placeholder="What are you bringing?"
+                    onChange={this.handleChange}
+                    value={this.state.currentItem}
+                  />
+                  <button>Add Item</button>
+                </form>
+              </section>
+              <section className="display-item">
+                <div className="wrapper">
+                  <ul>
+                    {this.state.items.map((item) => {
+                      return (
+                        <li key={item.id}>
+                          <h3>{item.title}</h3>
+                          <p>
+                            Brought by : {item.user}
+                            {item.user === this.state.user.displayName ||
+                            item.user === this.state.user.email ? (
+                              <button onClick={() => this.removeItem(item.id)}>
+                                Remove Item
+                              </button>
+                            ) : null}
+                          </p>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </section>
+            </div>
           </div>
         ) : (
           <div className="wrapper">
             <p style={{ fontWeight: 'bold' }}>Login to continue</p>
           </div>
         )}
-        {/* <div className="container">
-          <section className="add-item">
-            <form onSubmit={this.handleSubmit}>
-              <input
-                type="text"
-                name="username"
-                placeholder="What's your name?"
-                onChange={this.handleChange}
-                value={this.state.username}
-              />
-              <input
-                type="text"
-                name="currentItem"
-                placeholder="What are you bringing?"
-                onChange={this.handleChange}
-                value={this.state.currentItem}
-              />
-              <button>Add Item</button>
-            </form>
-          </section>
-          <section className="display-item">
-            <div className="wrapper">
-              <ul>
-                {this.state.items.map((item) => {
-                  return (
-                    <li key={item.id}>
-                      <h3>{item.title}</h3>
-                      <p>Brought by : {item.user}</p>
-                      <button onClick={() => this.removeItem(item.id)}>
-                        Remove Item
-                      </button>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </section>
-        </div> */}
       </div>
     );
   }
