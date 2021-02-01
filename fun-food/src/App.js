@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import firebase from './firebase.js';
+import firebase, { auth, provider } from './firebase.js';
 
 class App extends Component {
   constructor() {
@@ -10,6 +10,7 @@ class App extends Component {
       currentItem: '',
       username: '',
       items: [],
+      user: null,
     };
   }
 
@@ -37,7 +38,34 @@ class App extends Component {
     });
   };
 
+  logout = () => {
+    auth.signOut().then(() => {
+      this.setState({
+        user: null,
+      });
+    });
+  };
+
+  login = () => {
+    auth.signInWithPopup(provider).then((result) => {
+      const user = result.user;
+      this.setState({
+        user,
+      });
+    });
+  };
+
   componentDidMount() {
+    // When the user signs in, this checks the Firebase database to see
+    // if they were already previously authenticated.If they were, we
+    // set their user details back into the state.
+
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({ user });
+      }
+    });
+
     const itemsRef = firebase.database().ref('items');
 
     itemsRef.on('value', (snapshot) => {
@@ -75,9 +103,25 @@ class App extends Component {
         <header>
           <div className="wrapper">
             <h1>Checklist</h1>
+            {this.state.user ? (
+              <button onClick={this.logout}>Log Out</button>
+            ) : (
+              <button onClick={this.login}>Log In</button>
+            )}
           </div>
         </header>
-        <div className="container">
+        {this.state.user ? (
+          <div>
+            <div className="user-profile">
+              <img alt="profilePic" src={this.state.user.photoURL} />
+            </div>
+          </div>
+        ) : (
+          <div className="wrapper">
+            <p style={{ fontWeight: 'bold' }}>Login to continue</p>
+          </div>
+        )}
+        {/* <div className="container">
           <section className="add-item">
             <form onSubmit={this.handleSubmit}>
               <input
@@ -114,7 +158,7 @@ class App extends Component {
               </ul>
             </div>
           </section>
-        </div>
+        </div> */}
       </div>
     );
   }
