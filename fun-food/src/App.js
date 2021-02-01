@@ -43,6 +43,11 @@ class App extends Component {
     itemsRef.on('value', (snapshot) => {
       let items = snapshot.val();
 
+      // This value automatically fires on two occassions:
+
+      // Any time a new item is added or removed from our items reference inside of our database
+      // The first time the event listener is attached
+
       let newState = [];
 
       for (let item in items) {
@@ -59,12 +64,17 @@ class App extends Component {
     });
   }
 
+  removeItem(itemId) {
+    const itemRef = firebase.database().ref(`/items/${itemId}`);
+    itemRef.remove();
+  }
+
   render() {
     return (
       <div className="app">
         <header>
           <div className="wrapper">
-            <h1>Fun Food Friends</h1>
+            <h1>Checklist</h1>
           </div>
         </header>
         <div className="container">
@@ -89,7 +99,19 @@ class App extends Component {
           </section>
           <section className="display-item">
             <div className="wrapper">
-              <ul></ul>
+              <ul>
+                {this.state.items.map((item) => {
+                  return (
+                    <li key={item.id}>
+                      <h3>{item.title}</h3>
+                      <p>Brought by : {item.user}</p>
+                      <button onClick={() => this.removeItem(item.id)}>
+                        Remove Item
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           </section>
         </div>
