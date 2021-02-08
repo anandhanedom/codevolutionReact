@@ -1,3 +1,9 @@
+const pages = [
+  { path: "/", groups: ["Developer admin", "admin"] },
+  { path: "shipments", groups: ["Developer admin", "admin"] },
+];
+
+
 const ProtectedRoute = ({ path, component, ...props }) => {
   const dispatch = useDispatch();
   const location = useLocation();
