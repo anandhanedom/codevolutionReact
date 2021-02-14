@@ -1,9 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import { useState, useMemo } from 'react';
-import Child from './components/child';
+import "./App.css";
+import { useState, useMemo } from "react";
+import Child from "./components/child";
 
 function App() {
+  // number state
   const [number, setNumber] = useState(0);
 
   function increment() {
