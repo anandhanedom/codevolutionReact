@@ -32,6 +32,7 @@ React series by Codevolution
 5. useCallback - cache functions
 6. useMemo - cache returns
 7. useRef - returns a mutable ref object (.current property)
+8. React router hooks : useHistory, useParams,..
 
 ### useState
 
