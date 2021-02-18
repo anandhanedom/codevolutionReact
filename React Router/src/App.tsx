@@ -1,15 +1,15 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 //Components
-import Home from './components/Home';
-import About from './components/About';
-import Post from './components/Post';
+import Home from "./components/Home";
+import About from "./components/About";
+import Post from "./components/Post";
 
 // SETUP
 // CREATE ROUTES
 // CHANGE ROUTES
-// ROUTE PARAMS
+// ROUTE PARAMETERS
 
 const App: React.FC = () => {
   return (
