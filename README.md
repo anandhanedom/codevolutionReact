@@ -1,6 +1,6 @@
 # codevolutionReact
 
-React series by Codevolution
+React series by Cod Evolution
 
 ### Lifecycle methods
 
